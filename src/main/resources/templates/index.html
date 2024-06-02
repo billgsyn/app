@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Report Verification</title>
+    <script src="webjars/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="webjars/bootstrap/5.3.2/css/bootstrap.min.css"/>
+    <script src="webjars/bootstrap/5.3.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="/images/logo.svg" alt="" width="106" height="50" class="d-inline-block align-text-middle" style="margin:0 15px 0 0">
+      Cross Border Report Verification
+    </a>
+  </div>
+</nav>
+
+<div style="margin:20px 0 0 15px">
+<form enctype="multipart/form-data" method="POST" action="/verify-report">
+<div class="col-md-3">
+<div class="mb-3">
+<input class="form-control" type="file" id="reportFile" name="reportFile">
+</div>
+</div>
+<button class="btn btn-primary" type="submit">Verify Report</button>
+</form>
+<p></p>
+<p class="fw-bold" th:text="${fileName}"></p>
+<p class="fw-bold" th:text="${hashValue}"></p>
+<p class="fw-bold" th:text="${verificationResult}"></p>
+</div>
+</body>
+</html>
