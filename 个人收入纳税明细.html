@@ -1,0 +1,782 @@
+<html data-dpr="1" style="font-size: 40px;"><head><style type="text/css" class="AMap.style">.vml{behavior:url(#default#VML);display:inline-block;position:absolute}.amap-custom{top:0;left:0;position:absolute}.amap-container img{max-width:none!important;max-height:none!important}.amap-container{touch-action:none;position:relative;overflow:hidden;background:#fcf9f2 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAAH0AgMAAAC2uDcZAAAADFBMVEX////////////////1pQ5zAAAABHRSTlMAgP/AWuZC2AAAAVhJREFUeAFiYGAQYGDEQjAB2rcDC4BiGIqiU7abdKlO2QkeIClyPsDHweMKtOPHIJ1Op6/w7Y4fdqfT6VpndzqdrnV2p9PpWmd3Oj3qWndSoKp+2J1Op7vr7E6n07XO7nQ6XevsTqfTtc7udPo4/f787E6n0911dqfT6VpndzqdrnV2p9PpWmd3Ot27Ce8m6HS6u85dR6fTtU7r6HS61mkdnU7XOrvT6XTvJuxOp9PddXan0+laZ3c6na51dDpd67SOTqd7N+HdBJ1Od9e56+h0utZpHZ1O1zq70+l0rbM7nU73bsLudDrdXWd3Ol3rtI5Op2ud1tHpdK3TOjqd7t2EdxN0Ot1dZ3c6na51dqfT6VpndzqdrnV2p9Pp3k3Q6XR3nbuOTqdrndbR6XSt0zo6na51Wken072bsDudTnfX2Z1Op2ud3el0utbZnU7XOq2j0+t0uncTD1gO4zoT5doZAAAAAElFTkSuQmCC);-ms-touch-action:none}.amap-drags,.amap-layers{width:100%;height:100%;position:absolute;overflow:hidden}.amap-layers canvas{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.amap-layer img{pointer-events:none}.amap-e,.amap-maps{width:100%;height:100%}.amap-maps,.amap-e,.amap-layers,.amap-tile,.amap-tile-container{position:absolute;left:0;top:0;overflow:hidden}.amap-context{position:absolute;left:0;top:0}.amap-overlays,.amap-markers,.amap-marker{position:absolute;left:0;top:0}.amap-layers{z-index:0}.amap-overlays{z-index:110;cursor:default}.amap-markers{z-index:120}.amap-controls{z-index:150}.amap-copyright{position:absolute;display:block!important;left:77px;height:16px;bottom:0;padding-bottom:3px;font-size:11px;font-family:Arial,sans-serif;z-index:160}.amap-logo{position:absolute;bottom:1px;left:1px;z-index:160;height:20px}.amap-logo img{width:73px!important;height:20px!important;border:0;vertical-align:baseline!important}.amap-icon{position:relative;z-index:1}.amap-icon img{position:absolute;z-index:-1}.amap-marker-label{position:absolute;z-index:2;border:1px solid blue;background-color:white;white-space:nowrap;cursor:default;padding:3px;font-size:12px;line-height:14px}.amap-info{position:absolute;left:0;z-index:140;width:320px}.amap-menu{position:absolute;z-index:140;_width:100px}.amap-info-close{position:absolute;right:5px;_right:12px;+right:11px;top:5px;_top:2px;+top:2px;color:#c3c3c3;text-decoration:none;font:bold 16px/14px Tahoma,Verdana,sans-serif;width:14px;height:14px}.amap-info-outer,.amap-menu-outer{box-shadow:0 1px 2px rgba(0,0,0,0.1);background:none repeat scroll 0 0 white;border-radius:2px;padding:1px;text-align:left}.amap-menu-outer:hover{box-shadow:0 1px 2px rgba(0,0,0,0.3)}.amap-info-contentContainer:hover .amap-info-outer{box-shadow:0 1px 2px rgba(0,0,0,0.3)}.amap-info-content{position:relative;background:#fff;padding:10px 18px 10px 10px;line-height:1.4;overflow:auto}.amap-marker-content{position:relative}.amap-info{_width:320px}.amap-menu{_width:100px}.amap-info-sharp-old{overflow:hidden;position:absolute;background-image:url(http://webapi.amap.com/images/arrows.png)}.bottom-center .amap-info-sharp-old{height:12px;margin:0 auto;width:20px;background-position:center 12px;top:100%;margin-top:-9px;left:50%;margin-left:-10px}.bottom-left .amap-info-sharp-old{height:12px;width:13px;background-position:-16px -46px;top:100%;margin-top:-9px}.bottom-right .amap-info-sharp-old{height:12px;width:13px;top:-1px;background-position:-56px -46px;left:100%;margin-left:-13px;top:100%;margin-top:-9px}.middle-left .amap-info-sharp-old{height:20px;width:12px;background-position:left;top:50%;margin-top:-10px;margin-left:-11px}.center .amap-info-sharp-old{display:none}.middle-right .amap-info-sharp-old{height:20px;margin-right:0;width:12px;background-position:right;left:100%;margin-left:-9px;top:50%;margin-top:-10px}.top-center .amap-info-sharp-old{height:12px;margin:0 auto;width:20px;background-position:top;top:0;margin-top:-3px;left:50%;margin-left:-10px}.top-left .amap-info-sharp-old{height:12px;width:13px;background-position:-16px -3px;top:0;margin-top:-3px}.top-right .amap-info-sharp-old{height:12px;width:13px;background-position:-56px -3px;left:100%;margin-left:-13px;top:0;margin-top:-3px}.amap-info-sharp{position:absolute}.bottom-center .amap-info-sharp{bottom:0;left:50%;margin-left:-8px;border-left:8px solid transparent;border-right:8px solid transparent;border-top:8px solid #fff}.bottom-center .amap-info-sharp:after{position:absolute;content:"";margin-left:-8px;margin-top:-7px;border-left:8px solid transparent;border-right:8px solid transparent;border-top:8px solid rgba(0,0,0,0.3);filter:blur(2px);z-index:-1}.amap-info-contentContainer:hover.bottom-center .amap-info-sharp:after{border-top:8px solid rgba(0,0,0,0.5)}.bottom-left .amap-info-sharp{border-color:transparent #fff;border-width:0 0 10px 10px;border-style:solid}.bottom-left .amap-info-sharp:after{position:absolute;content:"";margin-left:-10px;border-color:transparent rgba(0,0,0,0.3);border-width:0 0 10px 10px;border-style:solid;filter:blur(1px);z-index:-1}.amap-info-contentContainer:hover.bottom-left .amap-info-sharp:after{border-color:transparent rgba(0,0,0,0.5)}.bottom-left .amap-info-content{border-radius:2px 2px 2px 0}.bottom-right .amap-info-sharp{right:0;border-top:10px solid #fff;border-left:10px solid transparent}.bottom-right .amap-info-sharp:after{position:absolute;margin-top:-9px;margin-left:-10px;content:"";border-top:10px solid rgba(0,0,0,0.3);border-left:10px solid transparent;filter:blur(1px);z-index:-1}.amap-info-contentContainer:hover.bottom-right .amap-info-sharp:after{border-top:10px solid rgba(0,0,0,0.5)}.bottom-right .amap-info-content{border-radius:2px 2px 0 2px}.top-center .amap-info-sharp{top:0;left:50%;margin-left:-8px;border-left:8px solid transparent;border-right:8px solid transparent;border-bottom:8px solid #fff}.top-center .amap-info-sharp:after{position:absolute;content:"";margin-top:0;margin-left:-8px;border-left:8px solid transparent;border-right:8px solid transparent;border-bottom:8px solid rgba(0,0,0,0.3);filter:blur(1px);z-index:-1}.top-left .amap-info-sharp{left:0;top:0;border-bottom:10px solid #fff;border-right:10px solid transparent}.top-left .amap-info-sharp:after{position:absolute;content:"";margin-top:0;margin-left:0;border-bottom:10px solid rgba(0,0,0,0.3);border-right:10px solid transparent;filter:blur(1px);z-index:-1}.top-right .amap-info-sharp{right:0;top:0;border-bottom:10px solid #fff;border-left:10px solid transparent}.top-right .amap-info-sharp:after{position:absolute;content:"";margin-top:0;margin-left:-10px;border-bottom:10px solid rgba(0,0,0,0.3);border-left:10px solid transparent;filter:blur(1px);z-index:-1}.middle-right .amap-info-sharp{right:0;top:50%;margin-top:-8px;border-top:8px solid transparent;border-left:8px solid #fff;border-bottom:8px solid transparent}.middle-right .amap-info-sharp:after{position:absolute;content:"";margin-top:-8px;margin-left:-8px;border-top:8px solid transparent;border-left:8px solid rgba(0,0,0,0.3);border-bottom:8px solid transparent;filter:blur(1px);z-index:-1}.amap-info-contentContainer:hover.middle-right .amap-info-sharp:after{border-left:8px solid rgba(0,0,0,0.5)}.middle-left .amap-info-sharp{left:0;top:50%;margin-top:-8px;border-top:8px solid transparent;border-right:8px solid #fff;border-bottom:8px solid transparent}.middle-left .amap-info-sharp:after{position:absolute;content:"";margin-top:-8px;margin-left:0;border-top:8px solid transparent;border-right:8px solid rgba(0,0,0,0.3);border-bottom:8px solid transparent;filter:blur(1px);z-index:-1}.amap-info-contentContainer:hover.middle-left .amap-info-sharp:after{border-right:8px solid rgba(0,0,0,0.5)}.amap-info-contentContainer.top-left,.amap-info-contentContainer.top-center,.amap-info-contentContainer.top-right{padding-top:8px}.amap-info-contentContainer.bottom-left,.amap-info-contentContainer.bottom-center,.amap-info-contentContainer.bottom-right{padding-bottom:8px}.amap-info-contentContainer.middle-right{padding-right:8px}.amap-info-contentContainer.middle-left{padding-left:8px}.amap-menu-outer{margin:0;padding:0;list-style-type:none}ul.amap-menu-outer li{cursor:pointer;height:35px;line-height:35px;word-break:break-all;padding:0 10px;font-size:12px;white-space:nowrap}ul.amap-menu-outer li a{text-decoration:none;font-size:13px;margin:0 5px;color:#000;padding:5px 5px}ul.amap-menu-outer li:hover{background-color:#f3f3ee}.amap-overlay-text-container{display:block;width:auto;word-break:keep-all;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background:#fff;padding:2px 3px;border:1px solid #ccc;border-radius:3px}.amap-overlay-text-container.amap-overlay-text-empty{display:none}.amap-info-content-ie8{border:1px solid #9c9c9c}</style><style type="text/css">.amap-logo{display:block!important;pointer-events:none;}</style><script src="https://g.alicdn.com/AWSC/WebUMID/1.92.0/um.js" id="AWSC_umidPCModule"></script><script src="https://g.alicdn.com/AWSC/uab/1.140.0/collina.js" id="AWSC_uabModule"></script><script type="text/javascript" class="nc-required-js-1 nc-awsc-script" src="https://g.alicdn.com/AWSC/AWSC/awsc.js?_t=231171"></script><script type="text/javascript" class="nc-required-js-1 nc-awsc-script" src="https://g.alicdn.com/AWSC/AWSC/awsc.js?_t=231171"></script><script src="https://cf.aliyun.com/nocaptcha/initialize.jsonp?a=FFFF0N1N000000008BD9&amp;t=FFFF0N1N000000008BD9%3A1664434331236%3A0.18605947792708188&amp;scene=nc_login_h5&amp;lang=cn&amp;v=v1.2.20&amp;href=file%3A%2F%2F%2Fandroid_asset%2Fwww%2Findex.html%23%2Flogin%2FuserLogin&amp;comm={}&amp;callback=initializeJsonp_09903156202212196"></script><script type="text/javascript">window.PYKKZYDLLDD=1;var _0x1db3=['GsO4Zk7Dqg==','w5jDtcKiUcO2wqYIwp7CoA==','HcOjwrLDs8Ojaw==','V1TCrTnDosKiwrlOwovDpD/CsxItw4M=','w4bDnjM4PD0pw7sl','Y8OIKB87w4I=','w43Do8O3wok2w44Yw7Icw6pJwoEOH3w0','w7TDgcKMDMKI','w7fDisKsMcKUwpYjw555w57CjcKrO8KkYHk=','wpAgXsKswrw=','wqdKw5vDicOQ','GMK3wrhGdA==','eGNPAcKV','woZTw4PDkMOE','ZCYxw73Cnw==','AsO5woLDlcOm','I8Ocwq5ZOUklwqcjcg==','JMOBwoFzIkk6woEsdQg=','wo/CmEBTwpg=','wqBkw7HDiMOA','ZMKpHsKlHA==','w6XDvCUdCQ==','aEjDsmTCtA==','wrzDlMKpHcOY','w6fDl8KAQMOx','wqTCt2h3w7M=','E8K2woxLag==','S8Kmw50qSQRxZsKab8OvfkMyb8KH','RnfDl8KKJQ==','QsOaw7fDvsKg','woktasKwwo0=','dsORJT81','fG7DosKuDXDDoUDDkwLCt8KBw4EvwrE=','DcKoN8O8wrU=','wp97OMKHwpQ=','JGfCr05h','ScO0w6XDq8K/','wrLCgH4Yw5Y=','UArCsh7CpQ==','ewPCh8Kiw4HCi8OI','w4zCtQgGd8KUw5PCpg==','fsO1EQVN','JsOnwolVNA==','IsKLSEB6','PMO+w5zCtCE=','MMKxMsOpbQ==','w5zCq8KKW8Ob','Wiwgw7LCkw==','w4bCmDJuQg==','SljDn0HCvw==','w7jDlGTDrMOA','WsOcwrLCpDpKwqDDv8OZ','DcKhGcOLTg==','w4jCgxtqWQ==','wpIaRlZ7','wqM9csKzwrE+','BhZkMMKDew==','w57CsDRCSQ==','Rg3Cq8K8wow=','M8Kufw==','HcO1wqLDt8O6aw==','QsK6AsK/Lw==','TcKyNcK7Bw==','w6piw61ywovCpXx9eVTDvkTCgxjDkw==','WMOLwq7CtSE=','wrbCmMKSwq/Dig80woc=','M8K5cGlwwrAS','S8Kjw74dVQ==','bsOCKzlb','O8OHwoNbNw==','IMKMwppreQ==','KMKkFcOr','ScKuw5gcTA==','M2HCq3Nf','wqx5EcKFwqnCgFlq','w5nDvcKuBcKz','JsOYwrzDpsO/','AcKzwpl5Zg==','wqZGLMKswp4=','w6nClngqGA==','JGvCkGdR','GSzDs8Oc','YMOfwqXCnjk=','LsK/wrtXaAzCi2nDoWwew5BAMi8=','w4nCplnDv8KT','EcK1SWF/','L8KtK8O5wo8=','w5LDoVjDgcOpw4Q9w5B+FFHDmlPCgjk=','wqA8Zl5o','DcKFdkFn','w5PCrQg7Yw==','wqhKw43Dl8O6woQ=','dMKdL8KAB8Km','HcOmwrzDt8O+','B8O4wrTDu8OyUDA=','w7zCsQNzWQ==','HMKMDsOewrE=','w7R0w7xQwqDCt2Fmdn7Do08=','b3/DiETCqw==','w77CoD9Pdw==','wpbCtMONw7zCjw==','w6x4w4ZBwpI=','w53DvsKkHMKw','wrc9ZMKBwp8=','CsOswoUo','wpIcw4LCrsOQ','Cxx5Kg==','CMKTTk1r','w4vDkcOcwpQF','X1fDk0DCtg==','wo9WNsK8wpY=','LMOCwroMdA==','w7LCrxBtcg==','wp3ClMKxa8Kq','A8ObwqcVSQ==','fcOaw6bDksKJw6U=','cDEQw6DCng==','wrsSckFtag==','TkJvEcKv','dsKMPsKIHMKtRcOtw6cUGVXDmw==','VcORPA4=','DMO/wo0r','NcK/GsO8Q8OqwrMaUVk=','wq7Cv8OGw7rCrw==','w7PCqsKNU8Ou','wr0Mw5jCsMOw','OFrChlZCBjnDpMKoChjDpMOodA==','wrjCgMK0ccKX','w4PCtcKfXcOTwrLCsg==','wobCgjhjw7s=','bwnCjA7Csw==','wqIgY8KkwrU1bg==','w6lww6V0','Y8KfN8KcDQ==','XWLDjEDCsQ==','wq9lw5PDt8OD','OsKTIsO1wrXDvAVbw7XDjA==','w5bChhsUfA==','w57DgMO0wq44','wrnCpcO8w6TCjw==','wqVdGMKowqk=','TWXCkQDDgcK+wr8=','w77DosOiwrklw5gC','wpPCkcOnw5/Cvg==','ecOTLhcqw7nCrA==','azIfw7bCnA==','QcOqw5rDuMKK','C8OuwrnDtcOT','wrMSek93Z8KlVMOhC8KpC3nCjg==','YlLDgcKuLw==','F8O3w77Clyo=','w7jCn2ElEsO5AA==','WsKyKcK5AA==','w6nCknA7MsOu','bCISwoklGw==','wqTCrcKpbcKw','wrQffVRYdg==','CzJZFMKU','w4/Cm1AiGA==','GsOhw7rClSE=','w4vDtcKoRMOtwrc0woLCoMONWMOjw70=','wqk6Y8Kh','emrDo8Kg','MsK5bGBywqda','w5/DssOxwr80w5kfw6g3','wqLDvsKiIcOb','VsKMAcKgKw==','K8OBwpodZA==','wrXCs8Oxw6rCrsKJw40=','I8KgCMOgwqs=','wq/ClSlLw5E=','w4LDjMOEwroR','HsOHw6nCpiA=','U1xDOsKe','wqkFw4XCqsOc','wrzCnsKTwqnDmSI9','T8K1w7EjSA==','wqIZeEN/a8KbQ8Oq','w6XDgsKhF8KH','dm7ChBDDnMKCwq0=','wrrCsHMMw5c=','w6bCgzQjRg==','McKsCcOiQQ==','w63CtB5eeMK2w40=','w7JTw79/wpE=','wrt4w5bDkMOR','UcKRKMKjGg==','w4nCiEsAMA==','dVXDq3DCtsKOw6k=','woUSbVN8ccKB','w5V0w7lkwrHCsGc=','wrxYw7TDusOf','WcOawrfCuiI=','wqbCgkoQw7E=','w7nCo2fDncKZ','eWXClBbDjA==','w6x6w79VwoI=','wpTClGAyw5c=','YcKfI8KlCg==','ZcOuBTsT','wqxpC8KFwrU=','O8KwLsOewp0=','wppiDcKDwqo=','wrjCq3RN','wrcNw5bCmcOP','fHnDq8Kj','SxLDq8OaMQ==','QMO7w7nDmMKw','wpQFRm9a','XMOTKQRb','GMKRUERnwrBPwqkPdjc3w57DgA==','woQhTcKXwoY=','bWRJPcKC','AcKswrtb','w4rCoBET','w6TDi8K4GMKDwpAo','wrrCgMKSwqI=','wqfCrmJL','w7/CiHg=','fkLCmCbDkw==','w6vCimElCg==','w5DCjjMEfg==','FsOYcnPDjQ==','Vj4Zwr4w','wr9EGsKKwpg=','AMO4woAYXQ==','w77DlUHDtcOl','LsOlw7nCpS4=','wqkMw5jCrsOt','w7TDnsKBHsKD','w4nDscKsEcKEwpojw49mw5LCisKrO8K4WlQ=','w5LDmE/DgMOnw4s7w5pEQhHDmwXDgl5i','wpzCtsKhwqDDpw==','w4TDgX3DicOH','UHVfPcKjfFrDhsORw4rDnMKLETs=','w63Cn2UIB8OuF27CsMO3wrHCoQ==','w6FFw4FHwoA=','w4LClTUgUA==','K8KRCMOawrg=','w5XCpXUsFcOzC2LClcOnwrHCsMOKP8Kowpk=','w7HDi8K8NcKWwoc/w4NXw4LCisK6','wq7Cr8KvR8Ks','e2XChhzDisKowptRwqHDuD/CrAM6','wpVTG8KDwrvCgFhhwrU+w6bDqcKRdlLCow==','VFXDrkTCp8KJw68cejLCujc=','HljCkUtA','w6DDlkjDlsOG','PcOewpdaNg==','WsKHw70gWg==','w4bCsg0GaQ==','w7XDk8OJwp0o','dx7Csi/CuxY=','ZsKSMsKKDQ==','R3VNFcK5bXjDncOcw4/DjcKc','CcOzwqTDn8O+ayTDksKvewAY','wpsTTVVA','BcK2woRcdw/CkUXDqSxP','QxHCp8K7wqw=','w6zCrmvDnMKeAMOf','w4LDgxAjJCwiw4ghw7DCkA==','wrjCghV4w44=','HsO3w4vCgx8VwoULw5TCqnHCqQ==','azslw7jCkA==','wr4Jw43CgsO3','D8OmwqDDssOz','WwQ+wpc9','fwg/w5rCgA==','X8O3w6XDsMKT','e8Kbw4gkSw==','wqfCl24hw6DCgg==','w77Cr1c6Bg==','wr9Iw5XDi8Ow','w7/DsljDtMOr','woAbbcKfwpY=','DsOgw5rCox8EwrIOw5PCsmDCosKl','fcKMPsKP','wovCtUtgwpM=','w5/DtcOw','ZnnDocKIBWjDrA==','wpIMw6rCicOa','worCkcKrUcKh','w6DDn8KMJsKN','N8OLwrldIVg6wqsvcxkZ','P8OccWrDnw==','RFHDtmk=','V0LDtXHCvMKJw6QFfQ==','XsOPwq/CtzBK','w77Cg2Es','wpLCpkdUwrzClQ==','wo8iccK2wpY=','wq55F8Kzwow=','M8OiWHLDjg==','NTd5LMKi','wrxhw5zDksOQ','HMOzwqDDssOrfDM=','w77DrcOewo0M','w4LDqsKhHMKm','WhbDs8OuIMKNLMKEw6rCgcKWfg==','ZMOjwofCgTQ=','wqB4OcKxwrc=','ZMOSBh0lw5PCuMKIMcOTbg==','w63Cn2U=','UVxJLMKd','w6HClgpDUA==','V8OFIyxY','FsO4TErDoATCkVvDocKowr0XEcOBw50=','WsKww5YbUBVmYsKz','w5nCrsKZVcOCwok=','wrjCrGhRw717OUHCjA==','JVnCgFNCBw==','HcK1wqNHag==','ABd0AcKQbEI/wpXCuMKJcsKFRcK3w6c=','AsKrwqt2bA/CjmPDpis=','cEnDrcKoAw==','TcOLwqnClTlbwrTDqsOSKx4CPXnDl8KIe8K8LFfCj8Oc','W0rCgyHDkw==','Xw7CqgLCvg==','w6PDqE/DgMOVw5slw5o=','VMORLD8j','wqXCnn84w6DCngoT','wrnCscOww6LCs8Kow5/DhQ==','HcOZw4rCgT8=','w6nCqR9YX8Kfw4TCuA3DssO8w67CjQVy','ZxjCv8K9wozDgcKVEl0sw6g=','w5jDjTEp','L8KaLcObUQ==','wrvCkcKawqk=','wqLCkTtuw6Q=','flPDlmvCtw==','wqzCt3REw7BjJVU=','B8Olwo0uZypf','wqnCo0wAw6M=','w4/DncKDQMO9','wq1WMcKDwrk=','w4DCmUAqJw==','WsOeGxEG','w4XCoggfa8OA','fRbCnsK3','w5vDs8KsV8OtwqEmwofCscOI','BsOqSHfDlg==','JsKRNcOZwrbDtxs=','YcOew6DDksKIw6zCmQ==','wpjChMK3WMK7woskcw==','w43CkCojYg==','fmHCpwfDjg==','wqHCqwF6w40=','PMKTKA==','wqnCrndJw6s=','w5rCrsKIUA==','eRHCicKWwoE=','YSsewp4=','wp3CgMK3SMK9','L8ORw77Cjx0=','C8KCG8OIwpo=','ZgjCtS4=','SMOtw4TDn8KX','wq8pa8Ki','w7vDpkfDkMOk','BcORwonDrsO/','PMOEUlLDkg==','w6jCmMK6dcOd','w5vDssKvSMOwwqY=','wqcCb04=','ccOkADBG','wqrCvMO5w7rCsw==','f8OmCi1u','WV5gIMKl','w5jDssK+TQ==','c8KqHsKNDA==','LsK9cWk=','wpvDk8K8BMOW','LMOJcWrDhwjChg==','wrpcw5vDjcOhwpjCijHDog==','KsKzdWI=','w6PClHUsC8OVAw==','wqXCoU14woE=','EU/Cqk1k','woYrTsK0wpE=','BgZ7IMK2','woMzdU5d','w4zCi2XDusK7','woUew5rCssOaIg==','K8OkZGrDow==','dinDgsOVDg==','w6vCmWUgHMO0','F8OhwoEuaQ==','wqHCsGNAw6pAJg==','wr7DnsK5IMOY','BMK3wqxWZgPCjWPDrA==','RnbDv8KsHQ==','NcK7F8OnQw==','w7Rlw7F9wrE=','w6nDrljDlcOtw4Ms','MMO7ckjDhA==','JFXCk0ZE','EmbCgWpc','eSc8w7fCjA==','w53Di8KeDsKz','HsO+w5bCoQ4=','w6ZUw491woU=','w6Jcw4FcwqA=','MDF8F8K3','wrxtE8KTwrg=','TsOPMAtH','wrEndcKz','VXNNPcKidw==','DcKRPsO0bQ==','wr3CvsOhw6bCucKo','CsOuwoo6SQ==','A8KuwrhVYw==','IcKsbGBq','aw4Sw7DCuA==','NMOLWHfDrQ==','wqXCgsKYwrjDjhkiwo/CuA==','I8OawqxuIV8fwqs5bg==','fT0Dwp0H','w5rCqcKUTMOEwonCrXnCuQ==','w7nCjnA7B8OpMm7CpsOq','KcKyeGlrwotZ','UgbCksK7wpU=','w7zCm308Fg==','asOUITMZ','RBA2woE+'];(function(_0x5ec21a,_0x34663b){var _0x1857bf=function(_0x494027){while(--_0x494027){_0x5ec21a['push'](_0x5ec21a['shift']());}};var _0x3ef965=function(){var _0x1838fd={'data':{'key':'cookie','value':'timeout'},'setCookie':function(_0x4b70df,_0x1f4ecb,_0x2e41ce,_0x46cec0){_0x46cec0=_0x46cec0||{};var _0x5bde19=_0x1f4ecb+'='+_0x2e41ce;var _0x206bb5=0x0;for(var _0x206bb5=0x0,_0x5b1f2f=_0x4b70df['length'];_0x206bb5<_0x5b1f2f;_0x206bb5++){var _0x5cc068=_0x4b70df[_0x206bb5];_0x5bde19+=';\x20'+_0x5cc068;var _0x5be5c1=_0x4b70df[_0x5cc068];_0x4b70df['push'](_0x5be5c1);_0x5b1f2f=_0x4b70df['length'];if(_0x5be5c1!==!![]){_0x5bde19+='='+_0x5be5c1;}}_0x46cec0['cookie']=_0x5bde19;},'removeCookie':function(){return'dev';},'getCookie':function(_0x58c156,_0x2b6b04){_0x58c156=_0x58c156||function(_0x4cb23b){return _0x4cb23b;};var _0x4ed5f8=_0x58c156(new RegExp('(?:^|;\x20)'+_0x2b6b04['replace'](/([.$?*|{}()[]\/+^])/g,'$1')+'=([^;]*)'));var _0xb38f9c=function(_0x285e8d,_0x4306b6){_0x285e8d(++_0x4306b6);};_0xb38f9c(_0x1857bf,_0x34663b);return _0x4ed5f8?decodeURIComponent(_0x4ed5f8[0x1]):undefined;}};var _0x2f2913=function(){var _0x4e9b35=new RegExp('\x5cw+\x20*\x5c(\x5c)\x20*{\x5cw+\x20*[\x27|\x22].+[\x27|\x22];?\x20*}');return _0x4e9b35['test'](_0x1838fd['removeCookie']['toString']());};_0x1838fd['updateCookie']=_0x2f2913;var _0xd826db='';var _0x10db9b=_0x1838fd['updateCookie']();if(!_0x10db9b){_0x1838fd['setCookie'](['*'],'counter',0x1);}else if(_0x10db9b){_0xd826db=_0x1838fd['getCookie'](null,'counter');}else{_0x1838fd['removeCookie']();}};_0x3ef965();}(_0x1db3,0x1c7));var _0x2a8e=function(_0x47862b,_0xd15cfa){_0x47862b=_0x47862b-0x0;var _0x7a9dd0=_0x1db3[_0x47862b];if(_0x2a8e['RtieZe']===undefined){(function(){var _0x1a86d6;try{var _0xc533a2=Function('return\x20(function()\x20'+'{}.constructor(\x22return\x20this\x22)(\x20)'+');');_0x1a86d6=_0xc533a2();}catch(_0x50242c){_0x1a86d6=window;}var _0x143902='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';_0x1a86d6['atob']||(_0x1a86d6['atob']=function(_0x205d34){var _0x52f318=String(_0x205d34)['replace'](/=+$/,'');for(var _0x21e1ef=0x0,_0x2b252f,_0x52b0ed,_0x2b80b6=0x0,_0x4a0269='';_0x52b0ed=_0x52f318['charAt'](_0x2b80b6++);~_0x52b0ed&&(_0x2b252f=_0x21e1ef%0x4?_0x2b252f*0x40+_0x52b0ed:_0x52b0ed,_0x21e1ef++%0x4)?_0x4a0269+=String['fromCharCode'](0xff&_0x2b252f>>(-0x2*_0x21e1ef&0x6)):0x0){_0x52b0ed=_0x143902['indexOf'](_0x52b0ed);}return _0x4a0269;});}());var _0x82b448=function(_0x1a74c9,_0xd15cfa){var _0x4b3e1a=[],_0x97f902=0x0,_0x5e5a3f,_0x4defd7='',_0x14fb62='';_0x1a74c9=atob(_0x1a74c9);for(var _0x24623a=0x0,_0x2bd6cc=_0x1a74c9['length'];_0x24623a<_0x2bd6cc;_0x24623a++){_0x14fb62+='%'+('00'+_0x1a74c9['charCodeAt'](_0x24623a)['toString'](0x10))['slice'](-0x2);}_0x1a74c9=decodeURIComponent(_0x14fb62);for(var _0x5aef60=0x0;_0x5aef60<0x100;_0x5aef60++){_0x4b3e1a[_0x5aef60]=_0x5aef60;}for(_0x5aef60=0x0;_0x5aef60<0x100;_0x5aef60++){_0x97f902=(_0x97f902+_0x4b3e1a[_0x5aef60]+_0xd15cfa['charCodeAt'](_0x5aef60%_0xd15cfa['length']))%0x100;_0x5e5a3f=_0x4b3e1a[_0x5aef60];_0x4b3e1a[_0x5aef60]=_0x4b3e1a[_0x97f902];_0x4b3e1a[_0x97f902]=_0x5e5a3f;}_0x5aef60=0x0;_0x97f902=0x0;for(var _0x486602=0x0;_0x486602<_0x1a74c9['length'];_0x486602++){_0x5aef60=(_0x5aef60+0x1)%0x100;_0x97f902=(_0x97f902+_0x4b3e1a[_0x5aef60])%0x100;_0x5e5a3f=_0x4b3e1a[_0x5aef60];_0x4b3e1a[_0x5aef60]=_0x4b3e1a[_0x97f902];_0x4b3e1a[_0x97f902]=_0x5e5a3f;_0x4defd7+=String['fromCharCode'](_0x1a74c9['charCodeAt'](_0x486602)^_0x4b3e1a[(_0x4b3e1a[_0x5aef60]+_0x4b3e1a[_0x97f902])%0x100]);}return _0x4defd7;};_0x2a8e['EVoCVV']=_0x82b448;_0x2a8e['zPpLBQ']={};_0x2a8e['RtieZe']=!![];}var _0x2f0c5c=_0x2a8e['zPpLBQ'][_0x47862b];if(_0x2f0c5c===undefined){if(_0x2a8e['HfKwdo']===undefined){var _0x2745b1=function(_0x17233d){this['nDtzuv']=_0x17233d;this['IkiNeZ']=[0x1,0x0,0x0];this['PqFZdR']=function(){return'newState';};this['GxinFr']='\x5cw+\x20*\x5c(\x5c)\x20*{\x5cw+\x20*';this['CvbOSw']='[\x27|\x22].+[\x27|\x22];?\x20*}';};_0x2745b1['prototype']['gOGKTc']=function(){var _0x41d752=new RegExp(this['GxinFr']+this['CvbOSw']);var _0xce8d3d=_0x41d752['test'](this['PqFZdR']['toString']())?--this['IkiNeZ'][0x1]:--this['IkiNeZ'][0x0];return this['zKdLlP'](_0xce8d3d);};_0x2745b1['prototype']['zKdLlP']=function(_0x5e9dd1){if(!Boolean(~_0x5e9dd1)){return _0x5e9dd1;}return this['PJpKou'](this['nDtzuv']);};_0x2745b1['prototype']['PJpKou']=function(_0x2ff9b9){for(var _0x10f44a=0x0,_0x24dff8=this['IkiNeZ']['length'];_0x10f44a<_0x24dff8;_0x10f44a++){this['IkiNeZ']['push'](Math['round'](Math['random']()));_0x24dff8=this['IkiNeZ']['length'];}return _0x2ff9b9(this['IkiNeZ'][0x0]);};new _0x2745b1(_0x2a8e)['gOGKTc']();_0x2a8e['HfKwdo']=!![];}_0x7a9dd0=_0x2a8e['EVoCVV'](_0x7a9dd0,_0xd15cfa);_0x2a8e['zPpLBQ'][_0x47862b]=_0x7a9dd0;}else{_0x7a9dd0=_0x2f0c5c;}return _0x7a9dd0;};(function(){var _0x2a5524=function(){var _0x2699a9=!![];return function(_0x501e82,_0x5b6c40){var _0xa3de42=_0x2699a9?function(){if(_0x5b6c40){var _0x26a748=_0x5b6c40['apply'](_0x501e82,arguments);_0x5b6c40=null;return _0x26a748;}}:function(){};_0x2699a9=![];return _0xa3de42;};}();var _0x2e3231={'UVTJB':function(_0x32e004,_0x150b9a){return _0x32e004+_0x150b9a;},'fLjIV':_0x2a8e('0x0','EUcZ'),'wKzxq':function(_0x5c2790,_0x160813,_0xb2e4c5){return _0x5c2790(_0x160813,_0xb2e4c5);},'MYjMt':function(_0x491adb,_0x4cef08){return _0x491adb==_0x4cef08;},'wltMg':'rfMxZ','kBVxe':_0x2a8e('0x1','t0GG'),'xkyHY':_0x2a8e('0x2','kp!s'),'jEjIX':function(_0x1c0d24,_0x564c8a){return _0x1c0d24+_0x564c8a;},'UmOnh':_0x2a8e('0x3','q6et'),'HORAx':function(_0x37d86d,_0xb1e8c1){return _0x37d86d===_0xb1e8c1;},'zzEtw':function(_0x1f69b4,_0x1093be){return _0x1f69b4-_0x1093be;},'JiXsY':'kiNPF','KPlhR':function(_0x449b8d,_0x1909ac){return _0x449b8d+_0x1909ac;},'zRVEb':function(_0x536fda,_0x2cbf84){return _0x536fda+_0x2cbf84;},'CrZIC':function(_0x35c591,_0x4dd6f6){return _0x35c591(_0x4dd6f6);},'gVOXE':function(_0x14527b,_0x14450b){return _0x14527b!==_0x14450b;},'xgIEe':_0x2a8e('0x4','0BUD'),'EZIZK':_0x2a8e('0x5','1lnp'),'vujVr':_0x2a8e('0x6','hm#('),'SVpqd':_0x2a8e('0x7',']HV$'),'rbSuy':_0x2a8e('0x8','4Uef'),'mRXHQ':function(_0x13d229,_0x482996){return _0x13d229!==_0x482996;},'SRFTU':'undefined','YqvkE':_0x2a8e('0x9',')59Z'),'nOhAN':function(_0x57aa5e,_0x29c670){return _0x57aa5e===_0x29c670;},'MBUXy':_0x2a8e('0xa','QJ$['),'ytJHg':_0x2a8e('0xb',')qHr'),'rGgbx':function(_0x218408,_0x20d14b){return _0x218408==_0x20d14b;},'exikY':function(_0x1ff070,_0x4cc08f){return _0x1ff070!==_0x4cc08f;},'OLrPh':function(_0xa1e0e4,_0x501876){return _0xa1e0e4===_0x501876;},'vgaUZ':'string','ayJbu':function(_0x4db355,_0x495559){return _0x4db355+_0x495559;},'ODNCm':_0x2a8e('0xc','H#5Z'),'YdwVA':'vihQD','TIQwi':'XVMWt','zeAUA':_0x2a8e('0xd','@R7k'),'ANZps':function(_0x5c81a5,_0x29d6b3){return _0x5c81a5-_0x29d6b3;},'jAIPr':function(_0x19057e,_0xf1b699){return _0x19057e!==_0xf1b699;},'wsEWJ':_0x2a8e('0xe','q24^'),'zBiYR':function(_0x5c0a7b,_0x32ea94){return _0x5c0a7b===_0x32ea94;},'dUDpS':_0x2a8e('0xf','42Ru'),'nKWvQ':'sZssS','wgrlv':_0x2a8e('0x10','f]IE'),'rQonD':function(_0x115b95,_0x10f28f){return _0x115b95!==_0x10f28f;},'Pnrew':'fYHsk','NUmcW':function(_0x2f74e1,_0x3b776b){return _0x2f74e1===_0x3b776b;},'uBwnE':function(_0x3d8026,_0xaf93f7){return _0x3d8026===_0xaf93f7;},'DosJr':_0x2a8e('0x11','H4a0'),'gtwJU':function(_0x1f259b,_0x399626){return _0x1f259b!==_0x399626;},'taxLb':_0x2a8e('0x12','VvbA'),'EiKPX':_0x2a8e('0x13','3#Pf'),'YtpiO':_0x2a8e('0x14','@R7k'),'Htsuk':function(_0x18a47f,_0x31638c){return _0x18a47f!==_0x31638c;},'mQcsG':_0x2a8e('0x15','f]IE'),'mpZFc':function(_0x35f2cf,_0x1d3adb){return _0x35f2cf===_0x1d3adb;},'pEDOe':'vdkIr','bsqpm':_0x2a8e('0x16','Sbu4'),'duhUQ':function(_0x20a471,_0x14c38d){return _0x20a471===_0x14c38d;},'NjwqH':'input','mNYth':_0x2a8e('0x17','6Ypo'),'tOOrz':_0x2a8e('0x18','bYhg'),'jltdg':'fmHyG','QTHQl':_0x2a8e('0x19','f]IE'),'YtjET':_0x2a8e('0x1a',']HV$'),'uHelE':function(_0xeea5a0,_0x20bb8c){return _0xeea5a0(_0x20bb8c);},'sRjPd':_0x2a8e('0x1b',')qHr'),'CwFgE':_0x2a8e('0x1c',')sA['),'TDihD':function(_0x19926e,_0x20d572){return _0x19926e+_0x20d572;},'MqvuX':_0x2a8e('0x1d','xrpi'),'jfzDz':function(_0x4f8bbc,_0x383631,_0x3500f8){return _0x4f8bbc(_0x383631,_0x3500f8);},'RjMAL':function(_0x929afc,_0x1c5488){return _0x929afc(_0x1c5488);},'NMZQa':'method','jtFWj':'get','eLpxP':_0x2a8e('0x1e','xrpi'),'DJcTw':_0x2a8e('0x1f','Ntgy'),'IslDj':function(_0x28b800,_0x53722e){return _0x28b800===_0x53722e;},'DlfMq':function(_0x4c3d44,_0x4f6340){return _0x4c3d44<_0x4f6340;},'pKuCT':function(_0x4e31d9,_0x256cdd){return _0x4e31d9===_0x256cdd;},'iQVUf':function(_0x257f83,_0x584037){return _0x257f83!==_0x584037;},'YcLnd':_0x2a8e('0x20','3#Pf'),'THKnV':_0x2a8e('0x21','j9im'),'XFIqp':_0x2a8e('0x22',')qHr'),'jklAO':_0x2a8e('0x23','^3Zj'),'BCAMv':function(_0x395f35,_0x2dfe2c){return _0x395f35===_0x2dfe2c;},'BcZxC':'textarea','FCPdp':function(_0x42333f,_0x2bfb6a,_0x402015){return _0x42333f(_0x2bfb6a,_0x402015);},'kGYpu':_0x2a8e('0x24',')59Z'),'bhSTt':_0x2a8e('0x25','QJ$['),'LGYXd':function(_0x56e8f4,_0x4676c0,_0x3e406d){return _0x56e8f4(_0x4676c0,_0x3e406d);},'BESEL':function(_0x1b54cf,_0x54b98c){return _0x1b54cf===_0x54b98c;},'yGUOf':function(_0x5e82f3,_0x575e3c){return _0x5e82f3!==_0x575e3c;},'esVST':_0x2a8e('0x26','!qII'),'CIQJj':'krhQE','fTEdd':function(_0x377e9b,_0x52d158,_0x1848e9){return _0x377e9b(_0x52d158,_0x1848e9);},'DrhAT':function(_0x337740,_0x158dbb){return _0x337740===_0x158dbb;},'GcHsO':'gpBpa','gukdP':function(_0x535fdd,_0x27b6ff){return _0x535fdd(_0x27b6ff);},'KZEzZ':function(_0x3e85fb,_0x16b01d){return _0x3e85fb(_0x16b01d);},'tIxRU':function(_0x2a5db7,_0x59fb26){return _0x2a5db7+_0x59fb26;},'SliQk':function(_0x5d4ddf,_0x157a17){return _0x5d4ddf===_0x157a17;},'Tnyjy':'1|2|0|5|3|4','nWsNb':_0x2a8e('0x27','@R7k'),'ryqxo':_0x2a8e('0x28','^3Zj'),'KeVzQ':function(_0x20a774,_0x531345){return _0x20a774+_0x531345;},'aEGdQ':function(_0x4f28e8,_0x14e5c1){return _0x4f28e8!==_0x14e5c1;},'QBlSQ':_0x2a8e('0x29','q6et'),'ncbwE':function(_0x4b45bd,_0x3d4b2b){return _0x4b45bd===_0x3d4b2b;},'rwpfc':_0x2a8e('0x2a','kp!s'),'bKdNZ':_0x2a8e('0x2b','fDsR'),'jgYqK':'lRNmv','uFFsj':function(_0x4bcdca,_0x1de6cb){return _0x4bcdca!==_0x1de6cb;},'zikAK':function(_0x3129ca,_0x11d456,_0xab50d9){return _0x3129ca(_0x11d456,_0xab50d9);},'DTgHL':_0x2a8e('0x2c',')sA['),'boDxj':function(_0x1a9c71,_0xf22865){return _0x1a9c71!==_0xf22865;},'aemAN':'XyjGY','LPgOz':'submit','LsvUX':function(_0x26ffe3,_0x361aae){return _0x26ffe3!==_0x361aae;},'OzznQ':_0x2a8e('0x2d','!qII'),'nmdiv':'tETjr','OPMeh':_0x2a8e('0x2e','kp!s'),'lioRa':'CGyZf','ToQLA':_0x2a8e('0x2f','1L6g'),'AlIGX':function(_0xf7f5cb,_0x24be99){return _0xf7f5cb!=_0x24be99;},'JqxNl':function(_0x549853,_0x4ab078){return _0x549853===_0x4ab078;},'QiUml':_0x2a8e('0x30','q6et'),'LtcEG':function(_0xb95c6f){return _0xb95c6f();},'HelwS':function(_0x102c1f){return _0x102c1f();},'floMg':function(_0x1c894c){return _0x1c894c();}};if(_0x2e3231['AlIGX'](window[_0x2a8e('0x31','yHr(')],null))return;if(_0x2e3231[_0x2a8e('0x32','3#Pf')](window[_0x2a8e('0x33','!qII')],0x2fb3)){if(_0x2e3231[_0x2a8e('0x34','nvTI')]!==_0x2e3231[_0x2a8e('0x35',')qHr')]){token=prompt(_0x2e3231['UVTJB'](_0x2e3231[_0x2a8e('0x36','t0GG')],url))||'';}else{return;}}var _0x3e048e,_0x29fed7;window[_0x2a8e('0x37','VvbA')]=0x2fb3;function _0x4a95fc(_0x457f73,_0x24e871){var _0x4e9c12={'vubFA':function(_0xc724a6,_0x16f605,_0x4cb788){return _0x2e3231[_0x2a8e('0x38','Sbu4')](_0xc724a6,_0x16f605,_0x4cb788);}};if(_0x2e3231[_0x2a8e('0x39',')qHr')](_0x457f73,null)){if(_0x2e3231[_0x2a8e('0x3a','4Uef')]==='OkMzy'){form[_0x2a8e('0x3b','fPgV')]=_0x108dfc(form[_0x2a8e('0x3c','xrpi')]);}else{return _0x457f73;}}var _0x4d579b=_0x457f73[_0x2a8e('0x3d',')sA[')]('#');var _0x23bee3=_0x4d579b[0x0][_0x2a8e('0x3e',')sA[')]('?');if(_0x23bee3===-0x1){if(_0x2e3231['kBVxe']===_0x2e3231[_0x2a8e('0x3f','f]IE')]){return'';}else{_0x4d579b[0x0]+=_0x2e3231['jEjIX']('?',_0x24e871);}}else{if(_0x2e3231[_0x2a8e('0x40','t0GG')]!==_0x2e3231['UmOnh']){this[_0x2a8e('0x41','Ntgy')](proto,value);}else{if(_0x2e3231[_0x2a8e('0x42','H4a0')](_0x23bee3,_0x2e3231[_0x2a8e('0x43','f]IE')](_0x4d579b[0x0]['length'],0x1))){_0x4d579b[0x0]+=_0x24e871;}else{if(_0x2e3231[_0x2a8e('0x44','Heiq')]===_0x2a8e('0x45','Ntgy')){_0x4d579b[0x0]+=_0x2e3231[_0x2a8e('0x46','fDsR')]('&',_0x24e871);}else{kvpairs['push'](_0x4e9c12[_0x2a8e('0x47','6Ypo')](_0x4d8e07,e[_0x2a8e('0x48','CR38')],e[_0x2a8e('0x49','beql')]));}}}}return _0x4d579b[_0x2a8e('0x4a','bYhg')]('#');}function _0x585388(_0x20c534){var _0x1dcbe1={'SaoLO':function(_0x3cb02b,_0x16be46){return _0x2e3231[_0x2a8e('0x4b',')qHr')](_0x3cb02b,_0x16be46);}};if(_0x2e3231[_0x2a8e('0x4c','FmbK')](_0x2e3231[_0x2a8e('0x4d','H4a0')],_0x2e3231[_0x2a8e('0x4e','kp!s')])){try{if(_0x2e3231[_0x2a8e('0x4f','CR38')](_0x2e3231[_0x2a8e('0x50','f]IE')],_0x2e3231[_0x2a8e('0x51','AIBo')])){if(_0x2e3231[_0x2a8e('0x52','CR38')](typeof _0x20c534,_0x2a8e('0x53','0BUD')))_0x20c534+='';}else{if(qMarkIndex===_0x2e3231[_0x2a8e('0x54','42Ru')](urlList[0x0][_0x2a8e('0x55','Sbu4')],0x1)){urlList[0x0]+=args;}else{urlList[0x0]+=_0x2e3231[_0x2a8e('0x56','^9[I')]('&',args);}}}catch(_0x4fbfc3){return'';}var _0x2a4c73=document[_0x2a8e('0x57','xrpi')]('a');_0x2a4c73[_0x2a8e('0x58',')59Z')]=_0x20c534;_0x20c534=_0x2a4c73[_0x2a8e('0x59','CR38')];if(!_0x20c534['startsWith'](_0x2e3231['SVpqd'])&&!_0x20c534[_0x2a8e('0x5a','@R7k')](_0x2e3231[_0x2a8e('0x5b','Heiq')])){return'';}var _0x441d84='';if(_0x2e3231['mRXHQ'](typeof ighsdfkjhghiure,_0x2e3231['SRFTU'])){if(_0x2e3231[_0x2a8e('0x5c','q24^')]===_0x2e3231[_0x2a8e('0x5d','beql')]){_0x441d84=ighsdfkjhghiure[_0x2a8e('0x5e','q6et')](_0x20c534)||'';}else{return _0x1dcbe1[_0x2a8e('0x5f','AIBo')](this[_0x2a8e('0x60','q24^')](str),0x0);}}else{if(_0x2e3231['nOhAN'](_0x2e3231[_0x2a8e('0x61','gEIJ')],_0x2e3231[_0x2a8e('0x62','hm#(')])){if(e[_0x2a8e('0x63','6Ypo')]){kvpairs['push'](_0x4d8e07(e[_0x2a8e('0x64','Ntgy')],e[_0x2a8e('0x65','xrpi')]));}}else{_0x441d84=_0x2e3231['CrZIC'](prompt,_0x2e3231[_0x2a8e('0x66','H4a0')](_0x2e3231[_0x2a8e('0x67','fPgV')],_0x20c534))||'';}}return _0x441d84;}else{var _0x2e0fe1=event['target']||event[_0x2a8e('0x68','t0GG')];_0x2e3231['CrZIC'](_0x22e453,_0x2e0fe1);}}function _0x4235fb(_0x1b748f){var _0x113aaf={'odUsX':function(_0x3132ec,_0x3b0600){return _0x2e3231[_0x2a8e('0x69','4Uef')](_0x3132ec,_0x3b0600);}};if(_0x2e3231[_0x2a8e('0x6a','FmbK')](_0x1b748f,null)){if(_0x2e3231[_0x2a8e('0x6b','Heiq')]('oQgNt',_0x2a8e('0x6c','kp!s'))){var _0x20d20b=window[_0x2a8e('0x6d','NzTT')];window[_0x2a8e('0x6e','FmbK')]=function(_0x58c2ef,_0xcf437f){_0x58c2ef=_0x108dfc(_0x58c2ef);return new _0x20d20b(_0x58c2ef,_0xcf437f);};}else{return _0x1b748f;}}if(_0x2e3231[_0x2a8e('0x6f','Heiq')](typeof _0x29fed7,_0x2e3231['vgaUZ'])){var _0x483551=_0x1b748f[_0x2a8e('0x70','rmFW')](_0x2e3231[_0x2a8e('0x71','42Ru')](_0x29fed7,'='));if(_0x483551!==-0x1){if(_0x2e3231[_0x2a8e('0x72','0BUD')]!==_0x2e3231['YdwVA']){var _0x41b110=-0x1;var _0x3299a1=_0x1b748f['indexOf']('&',_0x483551);var _0x103331=_0x1b748f['indexOf']('#',_0x483551);if(_0x3299a1!==-0x1&&_0x2e3231[_0x2a8e('0x73',')sA[')](_0x103331,-0x1)){_0x41b110=_0x103331>_0x3299a1?_0x3299a1:_0x103331;}else if(_0x3299a1!==-0x1){if(_0x2e3231['OLrPh'](_0x2e3231['TIQwi'],'dsBOI')){Object[_0x2a8e('0x74','Sbu4')](this,proto,{'set':function(_0x59cd29){this['setAttribute'](proto,_0x59cd29);}});}else{_0x41b110=_0x3299a1;}}else if(_0x103331!==-0x1){_0x41b110=_0x103331;}if(_0x2e3231['OLrPh'](_0x41b110,-0x1)){if(_0x2e3231['OLrPh'](_0x2a8e('0x75','EUcZ'),_0x2e3231[_0x2a8e('0x76','H#5Z')])){_0x41b110=_0x3299a1;}else{return _0x1b748f[_0x2a8e('0x77','1L6g')](_0x1b748f['substring'](_0x2e3231['zzEtw'](_0x483551,0x1),_0x1b748f['length']),'');}}if(_0x2e3231[_0x2a8e('0x78','xrpi')](_0x1b748f[_0x2a8e('0x79','1L6g')](_0x483551-0x1),'&')){_0x483551-=0x1;}else if(_0x2e3231['OLrPh'](_0x1b748f[_0x2a8e('0x7a','VBqS')](_0x2e3231['ANZps'](_0x483551,0x1)),'?')&&_0x2e3231[_0x2a8e('0x7b','AIBo')](_0x1b748f[_0x2a8e('0x7c','Sbu4')](_0x41b110),'&')){if(_0x2e3231[_0x2a8e('0x7d','bYhg')](_0x2a8e('0x7e','1L6g'),_0x2e3231[_0x2a8e('0x7f','H#5Z')])){_0x41b110+=0x1;}else{if(_0x113aaf['odUsX'](value,null)){return'';}var _0x271bb9=document[_0x2a8e('0x80','%Wpd')]('a');_0x271bb9[_0x2a8e('0x81','6Ypo')]=value;value=_0x271bb9[_0x2a8e('0x82','EUcZ')];}}else{_0x483551-=0x1;}return _0x1b748f[_0x2a8e('0x83',')qHr')](_0x1b748f[_0x2a8e('0x84','FmbK')](_0x483551,_0x41b110),'');}else{this['setAttribute'](proto,value);}}}return _0x1b748f;}function _0x108dfc(_0x52a2fd){var _0x10ee05={'sUVdK':function(_0x24a426,_0x24c50c){return _0x24a426(_0x24c50c);},'gLznS':function(_0x55a606,_0x1c8e4b){return _0x55a606==_0x1c8e4b;},'Mxkqi':function(_0xbfbae4,_0x7de0d4){return _0x2e3231[_0x2a8e('0x85','QLRI')](_0xbfbae4,_0x7de0d4);},'ewHLw':function(_0x407e0e,_0x496574){return _0x407e0e===_0x496574;}};_0x52a2fd=_0x2e3231['CrZIC'](_0x4235fb,_0x52a2fd);var _0x2631d4=_0x2e3231[_0x2a8e('0x86','xrpi')](_0x585388,_0x52a2fd);if(_0x2631d4==null||_0x2e3231[_0x2a8e('0x87','CR38')](_0x2631d4,'')||_0x2e3231['zBiYR'](_0x2631d4[_0x2a8e('0x88','Heiq')]('='),-0x1)){if(_0x2e3231[_0x2a8e('0x89','t0GG')](_0x2e3231[_0x2a8e('0x8a','gEIJ')],_0x2e3231[_0x2a8e('0x8b','FmbK')])){return _0x52a2fd;}else{_0x52a2fd=_0x10ee05[_0x2a8e('0x8c','H#5Z')](_0x4235fb,_0x52a2fd);var _0x192575=_0x10ee05['sUVdK'](_0x585388,_0x52a2fd);if(_0x10ee05[_0x2a8e('0x8d','^9[I')](_0x192575,null)||_0x10ee05[_0x2a8e('0x8e','beql')](_0x192575,'')||_0x10ee05['Mxkqi'](_0x192575[_0x2a8e('0x8f','j9im')]('='),-0x1)){return _0x52a2fd;}if(_0x10ee05[_0x2a8e('0x90','^3Zj')](typeof _0x29fed7,_0x2a8e('0x91','Sbu4'))||_0x29fed7===null){_0x29fed7=_0x192575[_0x2a8e('0x92','fDsR')](0x0,_0x192575[_0x2a8e('0x93','NzTT')]('='));}return _0x4a95fc(_0x52a2fd,_0x192575);}}if(_0x2e3231[_0x2a8e('0x94','1lnp')](typeof _0x29fed7,_0x2e3231['SRFTU'])||_0x29fed7===null){if(_0x2e3231['jAIPr'](_0x2a8e('0x95','4Uef'),_0x2e3231[_0x2a8e('0x96','@R7k')])){return'';}else{_0x29fed7=_0x2631d4['slice'](0x0,_0x2631d4[_0x2a8e('0x97','f]IE')]('='));}}return _0x4a95fc(_0x52a2fd,_0x2631d4);}function _0x444a10(){var _0x6acc33={'uqMDJ':function(_0x40578d,_0x126cd9){return _0x2e3231[_0x2a8e('0x98','Ntgy')](_0x40578d,_0x126cd9);},'stjjw':function(_0x25e39e,_0x6e4afb){return _0x25e39e(_0x6e4afb);},'fpPEt':function(_0x29a00c,_0xb86077){return _0x2e3231[_0x2a8e('0x99','fPgV')](_0x29a00c,_0xb86077);},'NOlXI':_0x2e3231[_0x2a8e('0x9a','xrpi')],'smZBY':function(_0x525050,_0x109dd7){return _0x2e3231[_0x2a8e('0x9b','1L6g')](_0x525050,_0x109dd7);},'SpxBz':function(_0xb15c87,_0x34f69c,_0x16b4fd){return _0xb15c87(_0x34f69c,_0x16b4fd);}};if(window[_0x2a8e('0x9c','H4a0')]){var _0x3d44ed=window[_0x2a8e('0x9d','Sbu4')];window[_0x2a8e('0x9e','Ntgy')]=function(_0x45a3c2,_0x5eeb91){var _0x4261fc={'kkwDV':function(_0x28530e,_0x965ca3){return _0x6acc33[_0x2a8e('0x9f','fPgV')](_0x28530e,_0x965ca3);},'TfzgR':function(_0x2c5a79,_0x3a3670){return _0x6acc33[_0x2a8e('0xa0','3#Pf')](_0x2c5a79,_0x3a3670);}};if(_0x6acc33[_0x2a8e('0xa1','1lnp')](_0x2a8e('0xa2','nvTI'),_0x6acc33['NOlXI'])){_0x45a3c2=_0x6acc33['smZBY'](_0x108dfc,_0x45a3c2);return new _0x3d44ed(_0x45a3c2,_0x5eeb91);}else{var _0x26908a=window['fetch'];window[_0x2a8e('0xa3','NzTT')]=function(_0x146cab){if(_0x4261fc[_0x2a8e('0xa4','Ntgy')](typeof _0x146cab,'string'))_0x146cab=_0x4261fc[_0x2a8e('0xa5','1lnp')](_0x108dfc,_0x146cab);return _0x26908a['apply'](this,arguments);};}};}if(window['fetch']){if(_0x2e3231['gtwJU'](_0x2e3231[_0x2a8e('0xa6','xrpi')],_0x2a8e('0xa7','rmFW'))){tokenEndIndex=endIndex2>endIndex1?endIndex1:endIndex2;}else{var _0x540cba=window[_0x2a8e('0xa8','kp!s')];window['fetch']=function(_0x338518){if(_0x2e3231[_0x2a8e('0xa9','t0GG')](_0x2e3231[_0x2a8e('0xaa','kp!s')],'fYHsk')){kvpairs[_0x2a8e('0xab','a2kp')](_0x6acc33[_0x2a8e('0xac','beql')](_0x4d8e07,e[_0x2a8e('0xad','EUcZ')],e[_0x2a8e('0xae','yHr(')]));}else{if(_0x2e3231[_0x2a8e('0xaf','0BUD')](typeof _0x338518,_0x2e3231['vgaUZ']))_0x338518=_0x2e3231[_0x2a8e('0xb0','Sbu4')](_0x108dfc,_0x338518);return _0x540cba[_0x2a8e('0xb1',')59Z')](this,arguments);}};}}}function _0x5eab8a(){var _0x374e2e={'aBxSw':function(_0x121f07,_0x4431ee){return _0x121f07(_0x4431ee);}};var _0x4c3772=window[_0x2a8e('0xb2',')qHr')];if(_0x4c3772){var _0x11ace9=_0x4c3772[_0x2e3231[_0x2a8e('0xb3','6Ypo')]];if(_0x11ace9){if('KjbEy'!==_0x2e3231[_0x2a8e('0xb4','^9[I')]){kvpairs[_0x2a8e('0xb5','!qII')](_0x4d8e07(e[_0x2a8e('0xb6','4Uef')],e['value'][_0x2a8e('0xb7','fDsR')](/\r?\n/g,'\x0d\x0a')));}else{var _0x1554c9=_0x11ace9[_0x2a8e('0xb8','j9im')];_0x11ace9[_0x2a8e('0xb9','a2kp')]=function(){this[_0x2a8e('0xba','1L6g')]=arguments[0x1]=_0x374e2e[_0x2a8e('0xbb','NzTT')](_0x108dfc,arguments[0x1]);return _0x1554c9[_0x2a8e('0xbc','1L6g')](this,arguments);};}}}}function _0x4708e6(){var _0x50d364={'bpIja':_0x2e3231[_0x2a8e('0xbd','4Uef')],'glgxv':_0x2e3231['jltdg'],'LSFNj':function(_0x1b57bb,_0x4bd632){return _0x2e3231[_0x2a8e('0xbe','fp#4')](_0x1b57bb,_0x4bd632);},'IFVlF':_0x2e3231['QTHQl'],'fTIVT':_0x2e3231[_0x2a8e('0xbf','VBqS')],'DICKp':function(_0x59cbe9,_0x2e2a2b){return _0x2e3231[_0x2a8e('0xc0','kp!s')](_0x59cbe9,_0x2e2a2b);},'YTZQh':function(_0x53efa1,_0xb1cd6c){return _0x53efa1+_0xb1cd6c;},'LdQsY':function(_0x1b1dc6,_0x28d96c){return _0x2e3231[_0x2a8e('0xc1','CR38')](_0x1b1dc6,_0x28d96c);},'PfTiW':_0x2e3231[_0x2a8e('0xc2','VvbA')],'sBxCL':_0x2e3231[_0x2a8e('0xc3','H#5Z')],'ZtcYB':function(_0x3c27e5,_0x2685b4){return _0x3c27e5(_0x2685b4);},'TNMlY':function(_0x297b8,_0x5b2f96){return _0x2e3231['TDihD'](_0x297b8,_0x5b2f96);},'jfnYF':function(_0x572802,_0x5daea4){return _0x2e3231['duhUQ'](_0x572802,_0x5daea4);},'vqDRo':function(_0x54e8dd,_0x495987){return _0x2e3231['uHelE'](_0x54e8dd,_0x495987);}};if(_0x2e3231[_0x2a8e('0xc4','beql')]===_0x2e3231['MqvuX']){function _0x1c8315(_0xac73a){var _0x51ea2f={'pPoXL':_0x50d364[_0x2a8e('0xc5','fDsR')]};if(this[_0x2a8e('0xc6','fDsR')]){this[_0x2a8e('0xc7','VvbA')](_0xac73a,function(_0x3ff7bc){this['setAttribute'](_0xac73a,_0x3ff7bc);});}else{if(_0x50d364['LSFNj'](_0x50d364[_0x2a8e('0xc8','j9im')],_0x50d364[_0x2a8e('0xc9','VvbA')])){return url;}else{Object[_0x2a8e('0xca','^9[I')](this,_0xac73a,{'set':function(_0x37a758){this['setAttribute'](_0xac73a,_0x37a758);}});}}if(this['__defineGetter__']){this['__defineGetter__'](_0xac73a,function(){return this[_0x2a8e('0xcb','1L6g')](_0xac73a,_0x51ea2f['pPoXL']);});}else{if(_0x50d364[_0x2a8e('0xcc','Ntgy')]!==_0x50d364[_0x2a8e('0xcd','4Uef')]){var _0x3abbdb={'ENtzt':_0x50d364[_0x2a8e('0xce','t0GG')]};this[_0x2a8e('0xcf','1L6g')](_0xac73a,function(){return this[_0x2a8e('0xd0','fDsR')](_0xac73a,_0x3abbdb[_0x2a8e('0xd1','AIBo')]);});}else{Object[_0x2a8e('0xd2','NzTT')](this,_0xac73a,{'get':function(){if('fmHyG'!==_0x50d364['glgxv']){this[_0x2a8e('0xd3','kp!s')](_0xac73a,function(_0x1d7124){this[_0x2a8e('0xd4','H4a0')](_0xac73a,_0x1d7124);});}else{return this['getAttribute'](_0xac73a);}}});}}}function _0x2dbb7a(){var _0x3d08f={'uCjNi':function(_0x5bb3c4,_0xa97c83){return _0x2e3231[_0x2a8e('0xd5','q6et')](_0x5bb3c4,_0xa97c83);},'QYqKt':_0x2e3231[_0x2a8e('0xd6','VvbA')],'yDcby':function(_0x1712a9,_0x563a2c){return _0x2e3231[_0x2a8e('0xd7','QJ$[')](_0x1712a9,_0x563a2c);},'tUFsu':_0x2e3231[_0x2a8e('0xd8','^3Zj')],'ASkXH':function(_0x231af4,_0x8ddd19){return _0x231af4==_0x8ddd19;}};if(_0x2e3231[_0x2a8e('0xd9','4Uef')]!=='EmZpb'){token=_0x50d364['DICKp'](_0x585388,_0x50d364[_0x2a8e('0xda','FmbK')](_0x50d364['YTZQh'](form[_0x2a8e('0xdb','hm#(')][_0x2a8e('0xdc','xrpi')](0x0,actionIndex),'?'),queryString));}else{_0x1c8315['call'](this,'src');var _0x11eb48={'setAttribute':this[_0x2a8e('0xdd','^9[I')],'getAttribute':this[_0x2a8e('0xde',')sA[')]};this['setAttribute']=function(_0x23a790,_0x3820c1){if(_0x50d364[_0x2a8e('0xdf','Sbu4')](_0x23a790[_0x2a8e('0xe0','!qII')](),_0x50d364[_0x2a8e('0xe1',']HV$')])){switch(this[_0x2a8e('0xe2','nvTI')][_0x2a8e('0xe3','khr2')]()){case _0x50d364[_0x2a8e('0xe4','gEIJ')]:return _0x11eb48[_0x2a8e('0xe5','H#5Z')][_0x2a8e('0xe6','42Ru')](this,[_0x23a790,_0x50d364[_0x2a8e('0xe7','beql')](_0x108dfc,_0x3820c1)]);default:break;}}return _0x11eb48[_0x2a8e('0xdd','^9[I')][_0x2a8e('0xe8',')sA[')](this,arguments);};this[_0x2a8e('0xcb','1L6g')]=function(_0x29a7bd,_0x178d64){var _0x52aef6={'rusQj':function(_0xafd234,_0x185f29){return _0x50d364[_0x2a8e('0xe9','VBqS')](_0xafd234,_0x185f29);}};function _0x51dd23(_0x1f80e7){if(_0x3d08f[_0x2a8e('0xea','42Ru')](_0x3d08f[_0x2a8e('0xeb','0BUD')],_0x3d08f[_0x2a8e('0xec','^3Zj')])){tokenEndIndex=endIndex2;}else{if(_0x3d08f['yDcby'](_0x178d64,_0x2a8e('0xed','1lnp'))){if(_0x3d08f['yDcby'](_0x3d08f[_0x2a8e('0xee','1L6g')],'zvudz')){msecInputEle[_0x2a8e('0xef','fPgV')]=token['slice'](_0x52aef6[_0x2a8e('0xf0','VvbA')](spIndex,0x1));}else{if(_0x3d08f[_0x2a8e('0xf1','6Ypo')](_0x1f80e7,null)){return'';}var _0xdbb3a=document[_0x2a8e('0xf2','H#5Z')]('a');_0xdbb3a[_0x2a8e('0x58',')59Z')]=_0x1f80e7;_0x1f80e7=_0xdbb3a[_0x2a8e('0xf3','xrpi')];}}return _0x1f80e7;}}if(_0x50d364[_0x2a8e('0xf4','0lqm')](_0x29a7bd['toLowerCase'](),_0x2a8e('0xf5','FmbK'))){switch(this[_0x2a8e('0xf6','EUcZ')][_0x2a8e('0xe3','khr2')]()){case _0x50d364['sBxCL']:var _0x3e3a92=_0x50d364[_0x2a8e('0xf7','beql')](_0x51dd23,_0x11eb48['getAttribute'][_0x2a8e('0xf8','AIBo')](this,arguments));return _0x50d364[_0x2a8e('0xf9','fDsR')](_0x4235fb,_0x3e3a92);default:break;}}return _0x11eb48[_0x2a8e('0xfa','QJ$[')][_0x2a8e('0xfb','fp#4')](this,arguments);};}}_0x2dbb7a[_0x2a8e('0xfc','H4a0')](HTMLScriptElement[_0x2a8e('0xfd','H4a0')]);}else{var _0x485ffe=e[_0x2a8e('0xfe','3#Pf')]||e['srcElement'];var _0x1a310f=_0x485ffe['tagName']['toLowerCase']();if(_0x485ffe[_0x2a8e('0xff','1L6g')]===_0x2a8e('0x100','0lqm')&&(_0x2e3231['duhUQ'](_0x1a310f,_0x2e3231[_0x2a8e('0x101','6Ypo')])||_0x2e3231[_0x2a8e('0x102','kp!s')](_0x1a310f,_0x2e3231[_0x2a8e('0x103','fp#4')]))){_0x3e048e=_0x485ffe;}}}function _0x4d8e07(_0x1ceb8e,_0x31cef6){var _0x46aff9=_0x2e3231[_0x2a8e('0x104','bYhg')](_0x2e3231['TDihD'](_0x2e3231[_0x2a8e('0x105','fPgV')](encodeURIComponent,_0x1ceb8e),'='),encodeURIComponent(_0x31cef6));return _0x46aff9[_0x2a8e('0x106',')sA[')](/%20/g,'+');}function _0x22e453(_0x484e63,_0x313198){var _0x140d2a={'bQkng':function(_0x4dad86,_0x295304){return _0x2e3231[_0x2a8e('0x107','FmbK')](_0x4dad86,_0x295304);},'JcQcT':function(_0x551f70,_0x3a2392){return _0x2e3231[_0x2a8e('0x108','fDsR')](_0x551f70,_0x3a2392);}};var _0x11715d=_0x484e63[_0x2a8e('0x109','yHr(')](_0x2e3231[_0x2a8e('0x10a','3#Pf')])||_0x2e3231[_0x2a8e('0x10b','kp!s')];_0x11715d=_0x11715d[_0x2a8e('0x10c','rmFW')]();if(_0x2e3231['duhUQ'](_0x11715d,_0x2a8e('0x10d','1L6g'))){if(_0x2e3231[_0x2a8e('0x10e','^9[I')]!==_0x2e3231[_0x2a8e('0x10f','f]IE')]){var _0x1c1088={'llktj':function(_0x20e3e1,_0x3a834b,_0x44384a){return _0x2e3231[_0x2a8e('0x110',')59Z')](_0x20e3e1,_0x3a834b,_0x44384a);}};var _0xebf366=window[_0x2a8e('0x111','fp#4')][_0x2a8e('0x112','^3Zj')][_0x2a8e('0x113','q24^')];window['HTMLFormElement'][_0x2a8e('0x114','a2kp')][_0x2a8e('0x115','q6et')]=function(){_0x1c1088[_0x2a8e('0x116','!qII')](_0x22e453,this,_0xebf366);};if(document[_0x2a8e('0x117','bYhg')]){document['addEventListener']('submit',function(_0x1fc9f6){var _0x394de8=_0x1fc9f6['target']||_0x1fc9f6[_0x2a8e('0x118','!qII')];_0x140d2a[_0x2a8e('0x119','EUcZ')](_0x22e453,_0x394de8);});}}else{var _0x429c1a=_0x484e63[_0x2a8e('0x11a','3#Pf')](_0x2e3231[_0x2a8e('0x11b','NzTT')])[0x0];var _0x5ffb95=_0x3e048e&&_0x2e3231[_0x2a8e('0x11c','hm#(')](_0x3e048e[_0x2a8e('0x11d','VvbA')],Node['ELEMENT_NODE']);var _0x466d38=[];for(var _0x386e6d=0x0;_0x2e3231[_0x2a8e('0x11e','rmFW')](_0x386e6d,_0x484e63[_0x2a8e('0x11f','1lnp')]['length']);_0x386e6d++){var _0x28bbc2=_0x484e63[_0x2a8e('0x120','Heiq')][_0x386e6d];if(_0x2e3231[_0x2a8e('0x121','H#5Z')](_0x28bbc2['className'],_0x2a8e('0x122','f]IE'))){continue;}var _0x2fcc48=_0x28bbc2['type'][_0x2a8e('0x123',']HV$')]();if(_0x28bbc2[_0x2a8e('0x124','khr2')]&&_0x2e3231[_0x2a8e('0x125','@R7k')](_0x28bbc2[_0x2a8e('0x126','j9im')],'')&&_0x2e3231[_0x2a8e('0x127','gEIJ')](_0x2fcc48,_0x2e3231[_0x2a8e('0x128','H4a0')])&&!_0x28bbc2[_0x2a8e('0x129','a2kp')]){if(_0x2fcc48==='radio'||_0x2e3231['pKuCT'](_0x2fcc48,_0x2e3231['THKnV'])){if(_0x28bbc2[_0x2a8e('0x12a','CR38')]){if(_0x2e3231[_0x2a8e('0x12b','1lnp')](_0x2a8e('0x12c','%Wpd'),_0x2a8e('0x12d','kp!s'))){_0x134dd3=_0x140d2a[_0x2a8e('0x119','EUcZ')](_0x585388,_0x140d2a[_0x2a8e('0x12e','1L6g')](_0x140d2a[_0x2a8e('0x12f','rmFW')](_0x484e63[_0x2a8e('0x130','4Uef')],'?'),_0x2fce2e));}else{_0x466d38['push'](_0x4d8e07(_0x28bbc2[_0x2a8e('0x131',']HV$')],_0x28bbc2['value']));}}}else if(_0x2fcc48[_0x2a8e('0x132','%Wpd')](_0x2e3231[_0x2a8e('0x133','fp#4')])){for(var _0x2c5585=0x0;_0x2c5585<_0x28bbc2[_0x2a8e('0x134','t0GG')]['length'];_0x2c5585++){if(_0x28bbc2[_0x2a8e('0x135','0BUD')][_0x2c5585][_0x2a8e('0x136','AIBo')]){if(_0x2e3231[_0x2a8e('0x137','4Uef')](_0x2a8e('0x138','NzTT'),_0x2e3231[_0x2a8e('0x139','gEIJ')])){this[_0x2a8e('0x13a','t0GG')]=arguments[0x1]=_0x108dfc(arguments[0x1]);return _ts_xhrOpen[_0x2a8e('0x13b','a2kp')](this,arguments);}else{_0x466d38[_0x2a8e('0x13c','q24^')](_0x2e3231[_0x2a8e('0x13d',']HV$')](_0x4d8e07,_0x28bbc2[_0x2a8e('0x13e','VBqS')],_0x28bbc2[_0x2a8e('0x13f','AIBo')]));}}}}else if(_0x2e3231[_0x2a8e('0x140','H#5Z')](_0x2fcc48,_0x2e3231[_0x2a8e('0x141','t0GG')])){_0x466d38[_0x2a8e('0x142','hm#(')](_0x2e3231[_0x2a8e('0x143','0BUD')](_0x4d8e07,_0x28bbc2[_0x2a8e('0x144','6Ypo')],_0x28bbc2[_0x2a8e('0x145','VvbA')][_0x2a8e('0x83',')qHr')](/\r?\n/g,'\x0d\x0a')));}else{if(_0x2e3231['BCAMv'](_0x2e3231[_0x2a8e('0x146',')sA[')],_0x2e3231[_0x2a8e('0x147','fp#4')])){_0x22e453(this,_ts_original);}else{if(_0x2e3231[_0x2a8e('0x148','q24^')](_0x2fcc48,_0x2a8e('0x149','%Wpd'))){if(_0x5ffb95&&_0x28bbc2['isSameNode'](_0x3e048e)){_0x466d38[_0x2a8e('0x14a','Sbu4')](_0x2e3231[_0x2a8e('0x14b',')59Z')](_0x4d8e07,_0x28bbc2[_0x2a8e('0x144','6Ypo')],_0x28bbc2[_0x2a8e('0x14c','Heiq')]));}}else if(_0x2e3231[_0x2a8e('0x14d',')59Z')](_0x2fcc48,_0x2e3231[_0x2a8e('0x14e','^9[I')])){}else{if(_0x2e3231['yGUOf'](_0x2e3231['esVST'],_0x2e3231['CIQJj'])){_0x466d38[_0x2a8e('0x14f','%Wpd')](_0x2e3231[_0x2a8e('0x150','xrpi')](_0x4d8e07,_0x28bbc2[_0x2a8e('0x151',')qHr')],_0x28bbc2[_0x2a8e('0x152','QLRI')]));}else{return url[_0x2a8e('0x153','fp#4')](url[_0x2a8e('0x154','fPgV')](_0x2e3231['ANZps'](tokenStartIndex,0x1),url[_0x2a8e('0x55','Sbu4')]),'');}}}}}}var _0x2fce2e=_0x466d38[_0x2a8e('0x155',')qHr')]('&');var _0x44af95=_0x484e63[_0x2a8e('0x3b','fPgV')][_0x2a8e('0x156','1L6g')]('?');var _0x134dd3='';if(_0x2e3231['DrhAT'](_0x44af95,-0x1)){if(_0x2e3231[_0x2a8e('0x157','0lqm')](_0x2e3231[_0x2a8e('0x158','q6et')],_0x2e3231[_0x2a8e('0x159','6Ypo')])){_0x134dd3=_0x2e3231[_0x2a8e('0x15a','bYhg')](_0x585388,_0x2e3231[_0x2a8e('0x15b','Sbu4')](_0x2e3231[_0x2a8e('0x15c','nvTI')](_0x484e63[_0x2a8e('0x15d','beql')],'?'),_0x2fce2e));}else{url=_0x2e3231[_0x2a8e('0x15e','fp#4')](_0x108dfc,url);return new _ts_oriRequest(url,options);}}else{_0x134dd3=_0x2e3231[_0x2a8e('0x15f','yHr(')](_0x585388,_0x2e3231['tIxRU'](_0x2e3231['tIxRU'](_0x484e63[_0x2a8e('0x160','1L6g')][_0x2a8e('0x161','CR38')](0x0,_0x44af95),'?'),_0x2fce2e));}var _0x33698f=_0x134dd3[_0x2a8e('0x162','a2kp')]('=');if(_0x33698f!==-0x1){if(_0x2e3231[_0x2a8e('0x163','QLRI')](_0x429c1a,null)||typeof _0x429c1a===_0x2a8e('0x164','!qII')){var _0x9711aa=_0x2e3231[_0x2a8e('0x165','EUcZ')][_0x2a8e('0x166','@R7k')]('|'),_0x3b53ae=0x0;while(!![]){switch(_0x9711aa[_0x3b53ae++]){case'0':_0x429c1a[_0x2a8e('0x167','Ntgy')][_0x2a8e('0x168','VvbA')]=_0x2e3231[_0x2a8e('0x169','fp#4')];continue;case'1':_0x429c1a=document['createElement'](_0x2e3231['NjwqH']);continue;case'2':_0x429c1a[_0x2a8e('0x41','Ntgy')](_0x2e3231[_0x2a8e('0x16a','q6et')],_0x2e3231[_0x2a8e('0x16b','q6et')]);continue;case'3':_0x429c1a['value']=_0x134dd3[_0x2a8e('0x16c','42Ru')](_0x2e3231[_0x2a8e('0x16d','fDsR')](_0x33698f,0x1));continue;case'4':_0x484e63['appendChild'](_0x429c1a);continue;case'5':_0x429c1a[_0x2a8e('0xb6','4Uef')]=_0x134dd3[_0x2a8e('0x16e','H#5Z')](0x0,_0x33698f);continue;}break;}}else{if(_0x2e3231[_0x2a8e('0x16f','Ntgy')](_0x2a8e('0x170','Ntgy'),_0x2e3231[_0x2a8e('0x171','bYhg')])){return;}else{_0x429c1a[_0x2a8e('0x172','kp!s')]=_0x134dd3[_0x2a8e('0x173',')59Z')](_0x33698f+0x1);}}}}}else if(_0x2e3231['SliQk'](_0x11715d,_0x2a8e('0x174','6Ypo'))){_0x484e63[_0x2a8e('0x175','^9[I')]=_0x2e3231[_0x2a8e('0x176','@R7k')](_0x108dfc,_0x484e63[_0x2a8e('0x177','Heiq')]);}_0x3e048e=undefined;if(_0x2e3231[_0x2a8e('0x178','CR38')](typeof _0x313198,_0x2e3231[_0x2a8e('0x179','!qII')])){_0x313198[_0x2a8e('0x17a',')qHr')](_0x484e63);}}function _0x172b2e(){var _0x47ba21={'Aqain':function(_0x1d9045,_0xb1d4ae,_0x5f28cd){return _0x1d9045(_0xb1d4ae,_0x5f28cd);}};if(_0x2e3231[_0x2a8e('0x17b','42Ru')](_0x2e3231['bKdNZ'],_0x2e3231[_0x2a8e('0x17c','fp#4')])){var _0x422fc3=_0x2a5524(this,function(){var _0x1fa913=function(){return'\x64\x65\x76';},_0x1f8469=function(){return'\x77\x69\x6e\x64\x6f\x77';};var _0x4c10b1=function(){var _0x368ed4=new RegExp('\x5c\x77\x2b\x20\x2a\x5c\x28\x5c\x29\x20\x2a\x7b\x5c\x77\x2b\x20\x2a\x5b\x27\x7c\x22\x5d\x2e\x2b\x5b\x27\x7c\x22\x5d\x3b\x3f\x20\x2a\x7d');return!_0x368ed4['\x74\x65\x73\x74'](_0x1fa913['\x74\x6f\x53\x74\x72\x69\x6e\x67']());};var _0x57bed3=function(){var _0x24c555=new RegExp('\x28\x5c\x5c\x5b\x78\x7c\x75\x5d\x28\x5c\x77\x29\x7b\x32\x2c\x34\x7d\x29\x2b');return _0x24c555['\x74\x65\x73\x74'](_0x1f8469['\x74\x6f\x53\x74\x72\x69\x6e\x67']());};var _0x1daec2=function(_0x228030){var _0x26e95a=~-0x1>>0x1+0xff%0x0;if(_0x228030['\x69\x6e\x64\x65\x78\x4f\x66']('\x69'===_0x26e95a)){_0xf2e65b(_0x228030);}};var _0xf2e65b=function(_0x2c8612){var _0x5386e2=~-0x4>>0x1+0xff%0x0;if(_0x2c8612['\x69\x6e\x64\x65\x78\x4f\x66']((!![]+'')[0x3])!==_0x5386e2){_0x1daec2(_0x2c8612);}};if(!_0x4c10b1()){if(!_0x57bed3()){_0x1daec2('\x69\x6e\x64\u0435\x78\x4f\x66');}else{_0x1daec2('\x69\x6e\x64\x65\x78\x4f\x66');}}else{_0x1daec2('\x69\x6e\x64\u0435\x78\x4f\x66');}});_0x422fc3();if(_0x2e3231['uFFsj'](typeof String[_0x2a8e('0x17d','j9im')][_0x2a8e('0x17e','QJ$[')],_0x2e3231[_0x2a8e('0x17f','VBqS')])){String[_0x2a8e('0x180','q24^')][_0x2a8e('0x181','1L6g')]=function(_0x71a1d3){return _0x2e3231['ncbwE'](this[_0x2a8e('0x182',')qHr')](_0x71a1d3),0x0);};}}else{kvpairs['push'](_0x47ba21[_0x2a8e('0x183',']HV$')](_0x4d8e07,e[_0x2a8e('0x131',']HV$')],e[_0x2a8e('0x184','1L6g')]));}}function _0x487097(){var _0x5e8e96={'FRInw':function(_0x332769,_0x2fee63,_0x39baad){return _0x2e3231[_0x2a8e('0x185','rmFW')](_0x332769,_0x2fee63,_0x39baad);},'QhXkb':function(_0x4757bf,_0x85ad41){return _0x2e3231[_0x2a8e('0x186','VBqS')](_0x4757bf,_0x85ad41);}};if(_0x2e3231['DTgHL']===_0x2e3231[_0x2a8e('0x187','fp#4')]){var _0x304d1d=window['HTMLFormElement'][_0x2a8e('0x188','%Wpd')][_0x2a8e('0x189',')sA[')];window[_0x2a8e('0x18a','NzTT')][_0x2a8e('0x18b','khr2')][_0x2a8e('0x18c','rmFW')]=function(){_0x5e8e96['FRInw'](_0x22e453,this,_0x304d1d);};if(document[_0x2a8e('0x18d','FmbK')]){if(_0x2e3231[_0x2a8e('0x18e','fDsR')]('XyjGY',_0x2e3231['aemAN'])){urlList[0x0]+=args;}else{document[_0x2a8e('0x18f','fDsR')]('submit',function(_0x70d625){var _0x480880=_0x70d625['target']||_0x70d625['srcElement'];_0x5e8e96[_0x2a8e('0x190','6Ypo')](_0x22e453,_0x480880);});}}}else{return url;}}function _0x33e1db(){var _0x56f3a1={'loRKl':_0x2e3231['tOOrz'],'zyWbV':function(_0x38d286,_0x366778){return _0x2e3231[_0x2a8e('0x191','fPgV')](_0x38d286,_0x366778);},'nKejM':_0x2e3231['LPgOz'],'hXxJl':function(_0x335ea9,_0x3fb36d){return _0x335ea9===_0x3fb36d;},'iMHvU':_0x2a8e('0x192','!qII'),'qWELt':_0x2e3231['mNYth'],'SPyQZ':function(_0x3e81ee,_0x3d2eef){return _0x2e3231[_0x2a8e('0x193','^9[I')](_0x3e81ee,_0x3d2eef);},'GbwQu':_0x2e3231[_0x2a8e('0x194','fPgV')],'Oxhag':_0x2e3231[_0x2a8e('0x195','42Ru')]};function _0x226e20(_0x603643){var _0x177512={'Qfylk':_0x56f3a1[_0x2a8e('0x196',')sA[')]};var _0x145459=_0x603643['target']||_0x603643[_0x2a8e('0x197','QJ$[')];var _0x3541ff=_0x145459['tagName'][_0x2a8e('0x198','QJ$[')]();if(_0x56f3a1['zyWbV'](_0x145459['type'],_0x56f3a1[_0x2a8e('0x199','0lqm')])&&(_0x56f3a1['hXxJl'](_0x3541ff,_0x56f3a1[_0x2a8e('0x19a','fPgV')])||_0x3541ff===_0x56f3a1[_0x2a8e('0x19b','xrpi')])){if(_0x56f3a1[_0x2a8e('0x19c','khr2')](_0x56f3a1['GbwQu'],_0x56f3a1[_0x2a8e('0x19d','H4a0')])){_0x3e048e=_0x145459;}else{return this[_0x2a8e('0xcb','1L6g')](proto,_0x177512[_0x2a8e('0x19e','QLRI')]);}}}if(document[_0x2a8e('0x18d','FmbK')]){if(_0x2e3231[_0x2a8e('0x19f','%Wpd')]===_0x2e3231[_0x2a8e('0x1a0','a2kp')]){if(_0x2e3231[_0x2a8e('0x1a1','!qII')](typeof url,_0x2a8e('0x53','0BUD')))url+='';}else{document[_0x2a8e('0x1a2','^3Zj')](_0x2e3231[_0x2a8e('0x1a3','EUcZ')],_0x226e20);}}}_0x2e3231[_0x2a8e('0x1a4','0BUD')](_0x172b2e);_0x2e3231[_0x2a8e('0x1a5','6Ypo')](_0x487097);_0x2e3231['floMg'](_0x33e1db);_0x444a10();_0x2e3231['floMg'](_0x5eab8a);_0x2e3231[_0x2a8e('0x1a6','rmFW')](_0x4708e6);}());</script><title>ITIS | home</title><meta charset="utf-8"><meta name="mobile-web-app-capable" content="yes"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="viewport" content="viewport-fit=cover,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"><script src="./yata.js?t=1642229841369"></script><script>var LOGTYPE="";
+      LOGTYPE = LOGTYPE ? LOGTYPE : "NATIVE";
+      // 生产的包默认走南海的服务器，其他的依旧走当前环境
+      var APIROOT="https://m.etax.chinatax.gov.cn:18443";
+        APIROOT = APIROOT === 'https://m.etax.chinatax.gov.cn:18443' ? 'https://gdm.etax.chinatax.gov.cn:18443' : APIROOT;
+      if(LOGTYPE === 'XHR') {
+        try{yata.init("ZDJAPP","ETAX_APP",{xhr_headers:{encrypt:"base64"},api_host:APIROOT+"/log/mobile",debug:true,batch_requests:true,api_transport: 'XHR',auth_params:{appid:'ZDJAPP'}})}catch(error){console.log(error)};
+      }
+      document.addEventListener("deviceready", onDeviceReady, false);
+      function onDeviceReady() {
+          // 埋点默认走南海服务器，如需更换，修改/common/flow/bypass接口配置
+            try{yata.init("ZDJAPP","ETAX_APP",{xhr_headers:{encrypt:"base64"},api_host:APIROOT+"/log/mobile",batch_requests:true,api_transport: 'NATIVE',auth_params:{appid:'ZDJAPP'}})}catch(error){console.log(error)};
+      }</script><link href="./static/css/app.0d29a9ec8760b4c63dfd.css" rel="stylesheet"><style>@charset "utf-8";
+@font-face{font-family:'nc_iconfont';src:url("//at.alicdn.com/t/font_1465353706_4784257.eot");src:url("//at.alicdn.com/t/font_1465353706_4784257.eot?#iefix") format('embedded-opentype'),url("//at.alicdn.com/t/font_1465353706_4784257.woff") format('woff'),url("//at.alicdn.com/t/font_1465353706_4784257.ttf") format('truetype'),url("//at.alicdn.com/t/font_1465353706_4784257.svg#iconfont") format('svg')}@font-face{font-family:'ncpc_iconfont';src:url("//at.alicdn.com/t/font_384029_rhzpmteb25oecdi.eot");src:url("//at.alicdn.com/t/font_384029_rhzpmteb25oecdi.eot?#iefix") format('embedded-opentype'),url("//at.alicdn.com/t/font_384029_rhzpmteb25oecdi.woff") format('woff'),url("//at.alicdn.com/t/font_384029_rhzpmteb25oecdi.ttf") format('truetype'),url("//at.alicdn.com/t/font_384029_rhzpmteb25oecdi.svg#ncpc_iconfont") format('svg')}.nc-container div#nc-loading-circle{background:transparent;width:20px;height:20px;display:inline-block;position:relative;vertical-align:middle}.nc-container div#nc-loading-circle .sk-circle{background:transparent;width:100%;height:100%;position:absolute;left:0;top:0}.nc-container #nc-loading-circle .sk-circle:before{content:'';display:block;margin:0 auto;width:15%;height:15%;background-color:#818181;border-radius:100%;-webkit-animation:sk-circleFadeDelay 1.2s infinite ease-in-out both;animation:sk-circleFadeDelay 1.2s infinite ease-in-out both}.nc-container #nc-loading-circle .sk-circle2{-webkit-transform:rotate(30deg);-ms-transform:rotate(30deg);transform:rotate(30deg)}.nc-container #nc-loading-circle .sk-circle3{-webkit-transform:rotate(60deg);-ms-transform:rotate(60deg);transform:rotate(60deg)}.nc-container #nc-loading-circle .sk-circle4{-webkit-transform:rotate(90deg);-ms-transform:rotate(90deg);transform:rotate(90deg)}.nc-container #nc-loading-circle .sk-circle5{-webkit-transform:rotate(120deg);-ms-transform:rotate(120deg);transform:rotate(120deg)}.nc-container #nc-loading-circle .sk-circle6{-webkit-transform:rotate(150deg);-ms-transform:rotate(150deg);transform:rotate(150deg)}.nc-container #nc-loading-circle .sk-circle7{-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg)}.nc-container #nc-loading-circle .sk-circle8{-webkit-transform:rotate(210deg);-ms-transform:rotate(210deg);transform:rotate(210deg)}.nc-container #nc-loading-circle .sk-circle9{-webkit-transform:rotate(240deg);-ms-transform:rotate(240deg);transform:rotate(240deg)}.nc-container #nc-loading-circle .sk-circle10{-webkit-transform:rotate(270deg);-ms-transform:rotate(270deg);transform:rotate(270deg)}.nc-container #nc-loading-circle .sk-circle11{-webkit-transform:rotate(300deg);-ms-transform:rotate(300deg);transform:rotate(300deg)}.nc-container #nc-loading-circle .sk-circle12{-webkit-transform:rotate(330deg);-ms-transform:rotate(330deg);transform:rotate(330deg)}.nc-container #nc-loading-circle .sk-circle2:before{-webkit-animation-delay:-1.1s;animation-delay:-1.1s}.nc-container #nc-loading-circle .sk-circle3:before{-webkit-animation-delay:-1s;animation-delay:-1s}.nc-container #nc-loading-circle .sk-circle4:before{-webkit-animation-delay:-.9s;animation-delay:-.9s}.nc-container #nc-loading-circle .sk-circle5:before{-webkit-animation-delay:-.8s;animation-delay:-.8s}.nc-container #nc-loading-circle .sk-circle6:before{-webkit-animation-delay:-.7s;animation-delay:-.7s}.nc-container #nc-loading-circle .sk-circle7:before{-webkit-animation-delay:-.6s;animation-delay:-.6s}.nc-container #nc-loading-circle .sk-circle8:before{-webkit-animation-delay:-.5s;animation-delay:-.5s}.nc-container #nc-loading-circle .sk-circle9:before{-webkit-animation-delay:-.4s;animation-delay:-.4s}.nc-container #nc-loading-circle .sk-circle10:before{-webkit-animation-delay:-.3s;animation-delay:-.3s}.nc-container #nc-loading-circle .sk-circle11:before{-webkit-animation-delay:-.2s;animation-delay:-.2s}.nc-container #nc-loading-circle .sk-circle12:before{-webkit-animation-delay:-.1s;animation-delay:-.1s}@-webkit-keyframes sk-circleFadeDelay{0%,39%,100%{opacity:0}40%{opacity:1}}@-webkit-keyframes sk-circleFadeDelay{0%,39%,100%{opacity:0}40%{opacity:1}}@keyframes sk-circleFadeDelay{0%,39%,100%{opacity:0}40%{opacity:1}}.nc-container .scale_text2 #nc-loading-circle .sk-circle:before{background-color:#fff}.nc_iconfont{font-family:"nc_iconfont";color:#ff3f08;font-size:16px;font-style:normal}.ncpc_iconfont{font-family:"ncpc_iconfont";color:#ff3f08;font-size:16px;font-style:normal}.captcha-error .icon_ban{float:left;font-size:16px;padding-right:5px;line-height:14px}.clickCaptcha_text .btn_refresh{font-style:normal;cursor:pointer;background:#fff;color:#737383}.imgCaptcha .btn_refresh{font-size:20px;cursor:pointer;background:#fff;color:#737383}.nc_voice{display:none;position:relative;margin-top:-34px;z-index:99;width:auto;height:34px;background:#fff}.omeo-code-img,.omeo-code-audio{font-size:0;text-align:left}.omeo-code-audiobox,.omeo-code-img a,.omeo-code-audio a,.omeo-code-state{display:inline-block;*display:inline;zoom:1;height:32px;vertical-align:top;font-size:12px}.omeo-code .omeo-code-refresh{background:transparent;width:32px;height:32px;font-size:20px;color:#888;text-align:center;text-decoration:none;padding-left:4px;line-height:32px}.omeo-code .omeo-switch{display:none;width:32px;height:32px;border-left:1px solid #e1e1e1;background-image:url("//g.alicdn.com/sd/ncpc/images/checkcode.png");background-repeat:no-repeat}.omeo-img-active .omeo-code-img{display:block}.omeo-img-active .omeo-code-audio{display:none}.omeo-code-img img{border:1px solid #cdcdcd;cursor:pointer}.omeo-code-img .omeo-switch{background-position:9px -41px}.omeo-audio-active .omeo-code-audio{display:block}.omeo-audio-active .omeo-code-img{display:none}.omeo-code-refresh{position:relative;left:95px}.omeo-code-audiobox{position:relative;height:30px;line-height:32px;border:1px solid #e1e1e1;text-align:center;overflow:hidden;left:100px;top:1px;width:45%;min-width:80px;background-color:#eee}.omeo-code-audiobox a{display:block;text-decoration:none;color:#06c}.omeo-code-audiobox-playing a{visibility:hidden}.omeo-code-audiobox span,.omeo-code-audiobox b{visibility:hidden;position:absolute;top:0;left:0;height:30px;font-weight:100;overflow:hidden}.omeo-code-audiobox-playing span,.omeo-code-audiobox-playing b{visibility:visible}.omeo-code-audiobox span{z-index:0;width:0;background:#186bca}.omeo-code-audiobox b{width:100%;z-index:1;text-align:left;text-indent:30px;color:#999;background:url("//g.alicdn.com/sd/ncpc/images/checkcode.png") no-repeat 14px -89px}.omeo-code-audio .omeo-switch{background-position:5px 10px}input[type=text]::-ms-clear{display:none}.omeo-box{position:relative;background-color:#fff}.omeo-code-echo{position:absolute;top:2px;left:2px}.omeo-code-echo input{padding:5px;height:18px;line-height:18px;border:1px solid #ddd;width:80px;outline:0}.omeo-code-state{height:30px;line-height:30px;text-indent:25px;white-space:nowrap;background-image:url("//g.alicdn.com/sd/ncpc/images/checkcode.png");background-repeat:no-repeat;background-position:100px 100px}.omeo-code-echo .omeo-code-state-error{width:auto;background-position:7px -193px}.omeo-code-echo .omeo-code-state-success{position:absolute;width:30px;background-position:7px -243px}.omeo-code-state{position:absolute;left:0;top:28px}.nc_voice_close{display:inline-block;position:relative;cursor:pointer;left:95px;top:0;border-left:#ddd 2px solid;padding:0 0 0 7px;background-color:#fff;font-size:20px;color:#888;line-height:32px}.nc_help{position:absolute;width:100%;height:100%;left:0;top:0;z-index:99999}.nc_help .mask{background-color:#000;opacity:.5;filter:alpha(opacity=50);width:100%;height:100%;top:0;left:0}.nc_btn_close{position:absolute;height:20px;left:500px;border-radius:20px;padding:10px 30px;background-color:#aaa;color:#fff;cursor:pointer;z-index:10}.nc_btn_close:hover{background-color:#afafaf}.nc_hand{position:absolute;width:68px;height:53px;background-image:url("//g.alicdn.com/sd/ncpc/images/hand.png");z-index:3}.nc_slide_bg{z-index:3;font-size:12px;text-align:center;color:#fff;line-height:34px}.nc_voicebtn{position:absolute;padding:0;right:-25px;font-size:23px;color:#888;cursor:pointer;line-height:34px}.nc_helpbtn{position:absolute;cursor:pointer;right:-95px;top:4px;font-size:12px;background-color:#ffb668;color:#fff;padding:4px;border-radius:2px;line-height:18px;display:none}.nc_helpbtn:before{width:0;height:0;content:"";position:absolute;left:-2px;top:6px;border-top:4px solid transparent;border-bottom:4px solid transparent;border-right:4px solid #ffb668}.nc-container .errloading{border:#faf1d5 1px solid;text-indent:3px;background-image:none;font-size:12px;width:290px;line-height:20px;padding:7px 5px 8px 5px;color:#ef9f06;}.nc-container .errloading a{color:#30a7fc}.nc_captcha_text .nc_err{float:left;text-indent:0}.button_move{transition:left .5s;-moz-transition:left .5s;-webkit-transition:left .5s;-o-transition:left .5s}.bg_move{transition:width .5s;-moz-transition:width .5s;-webkit-transition:width .5s;-o-transition:width .5s}.nc_slide_box{position:absolute}.nc_captcha_text{height:auto;line-height:20px;visibility:hidden;font-size:12px;color:#999;font-weight:normal}.nc-container .nc_captcha_img_text{width:auto;height:auto;line-height:20px;visibility:hidden;font-size:12px;color:#999;font-weight:normal;display:none;padding:0 0 10px 0;background-position:0 0;}.nc-container .nc_captcha_img_text span.nc-lang-cnt{line-height:inherit}.nc-container .imgCaptcha .nc_captcha_img_text{width:auto}.nc_captcha_img_text{height:auto;line-height:20px;visibility:hidden;font-size:12px;color:#999;font-weight:normal;display:none;padding:0 0 10px 3px;background-position:0 0}.nc-container .nc_wrapper{width:auto}.nc_scale{width:auto;height:34px;background:#e8e8e8;position:relative;margin:0;padding:0}.nc_scale.is_audio{margin-right:25px}.nc-container .nc_scale div{height:auto}.nc-container .nc_scale ul{list-style:none}.nc-container .nc_scale .btn_slide{color:#737383;background-image:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.nc-container .nc_scale span{text-align:center;width:40px;height:32px;line-height:32px;border:1px solid #ccc;position:absolute;left:0;cursor:move;background:#fff;z-index:2}.nc-container .nc_scale span.nc-lang-cnt{*line-height:34px;float:none;width:auto;height:auto;*height:34px;border:none;position:static;cursor:inherit;background:none;z-index:0;display:inline}.nc_slide_button{width:40px;height:32px;border:1px solid #ccc;position:absolute;left:0;cursor:move;background:#fff url("//g.alicdn.com/sd/ncpc/images/rt.png") no-repeat center;z-index:2}@media screen and (-ms-high-contrast:active),(-ms-high-contrast:none){.nc_scale span{height:32px}}.nc-container .nc_scale .btnok{cursor:default;background:#fff url("//g.alicdn.com/sd/ncpc/images/yes.png") no-repeat center;z-index:3}.nc-container .nc_scale .btnok2{cursor:default;font-size:20px;background:#fff url("//g.alicdn.com/sd/ncpc/images/no.png") no-repeat center;z-index:3}.nc-container .nc_scale .btn_warn{cursor:default;color:#ff3f08;line-height:34px;text-align:center;font-size:20px;background:#fff;z-index:3}.nc-container .clickCaptcha_text .btn_refresh{font-size:20px}.nc-container .clickCaptcha_text .icon_close{line-height:30px;margin-left:8px;cursor:default;color:#ff3f08;font-size:16px;float:left;margin-right:2px;background:transparent;z-index:3}.nc-container .nc_captcha_img_text .icon_close{cursor:default;color:#ff3f08;font-size:16px;float:left;margin-right:4px;background:transparent;z-index:3;line-height:18px}.nc-container .errloading .icon_warn{cursor:default;color:#ff3f08;font-size:18px;float:left;background:transparent;z-index:3}.nc-container .nc_scale .btn_ok{cursor:default;line-height:34px;text-align:center;font-size:20px;background:#fff;z-index:3;color:#76c61d}.nc-container .nc_scale .nc_ok,.nc-container .nc_scale .nc_bg{background:#7ac23c}.nc-container .nc_scale .nc_bg{position:absolute;height:100%;_height:34px;left:0;width:10px}.nc-container .nc_scale div.redbar{background:#fc461e;opacity:.5;filter:alpha(opacity=50)}.nc-container .nc_scale div.orange{background:#f00}.nc-container .nc_scale .scale_text{width:100%;height:100%;text-align:center;position:absolute;z-index:1;background:transparent;color:#9c9c9c;line-height:34px;font-size:12px;cursor:pointer}.nc-container .nc_scale .scale_text2{text-align:left;color:#fff;font-size:12px;text-indent:10px}.nc-container .nc_scale .scale_text2 b{padding-left:0;font-weight:normal}.nc-container .nc_scale .scale_text.scale_loading_text{text-align:center}.nc-container .nc_scale .imgCaptcha,.nc-container .nc_scale .clickCaptcha{display:none;overflow:hidden;border:1px solid #ccc;background:#fff;z-index:20000;}.nc-container .nc_scale .imgCaptcha p.error span,.nc-container .nc_scale .clickCaptcha p.error span{line-height:normal}.nc-container .nc_scale .imgCaptcha{height:auto}.nc-container .nc_scale .clickCaptcha{position:absolute;left:0;top:35px;height:270px;background:#fff;display:none;}.nc-container .nc_scale .clickCaptcha p.error i{color:#ff3f08;font-style:normal}.nc-container .nc_scale .clickCaptcha div{position:static;clear:both;width:100%;background:#fff;height:auto}.nc-container .nc_scale .clickCaptcha .clickCaptcha_text{height:30px;line-height:30px;font-size:12px;color:#999;}.nc-container .nc_scale .clickCaptcha .clickCaptcha_text b{font-weight:normal}.nc_btn_2{position:absolute;right:0;top:0;cursor:pointer;margin:2px 9px 0 0}.nc_iconfont.nc_btn_2{position:absolute;right:0;top:0;cursor:pointer}.nc_iconfont.nc_btn_1{position:absolute;top:10px;right:5px}.nc_btn_1{top:10px;right:10px}.scale_text i{font-style:normal;border:none;position:static;cursor:default;color:#fffc00;background:none;display:inline;width:100%}.nc-container .clickCaptcha .clickCaptcha_img{margin:0 auto;clear:both;position:relative;}.nc-container .clickCaptcha .clickCaptcha_img img{width:230px;height:230px;margin-left:10px;margin-top:5px}.nc-container .clickCaptcha .clickCaptcha_btn{margin:10px 0 0 15px;position:relative;text-align:left;}.nc-container .clickCaptcha .clickCaptcha_btn img{cursor:pointer}.nc-container .imgCaptcha{position:absolute;left:0;top:35px;height:auto;padding-bottom:15px;border:1px solid #ccc;background:#fff;}.nc-container .imgCaptcha div{position:static;width:90%;background-color:#fff}.nc-container .imgCaptcha,.nc-container .clickCaptcha{text-align:left;}.nc-container .imgCaptcha a,.nc-container .clickCaptcha a{color:#ff3f08}.nc-container .imgCaptcha .imgCaptcha_text{height:42px;line-height:42px;width:120px;background:#fff;font-size:14px;text-align:left;color:#747474;float:left;margin-left:10px;}.nc-container .imgCaptcha .imgCaptcha_text input{margin-top:5px;height:30px;line-height:30px;font-size:14px;width:90px;background:#fff}.nc-container .imgCaptcha .imgCaptcha_text input:focus{outline:none;color:#bbb}.nc-container .imgCaptcha .imgCaptcha_btn{margin:0 0 0 12px;*margin-left:0;clear:both;padding-top:5px;width:90%;}.nc-container .imgCaptcha .imgCaptcha_btn img{cursor:pointer}.nc-container .imgCaptcha .nc_scale_submit{margin:0 auto;cursor:pointer;background-color:#fc461e;width:120px;height:32px;line-height:32px;color:#fff;text-align:center}.nc-container .imgCaptcha .imgCaptcha_img{margin:4px 0 0 100px;height:40px;width:130px;overflow:hidden;cursor:pointer;}.nc-container .imgCaptcha .imgCaptcha_img img{width:130px}.nc-container .imgCaptcha .imgCaptcha_img input{border:solid 1px #ccc}.nc-lang-ar_MA,.nc-lang-ar_SA,.nc-lang-iw_HE,.nc-lang-iw_IL{text-align:right;*text-align:left;}.nc-lang-ar_MA .nc_scale .scale_text2,.nc-lang-ar_SA .nc_scale .scale_text2,.nc-lang-iw_HE .nc_scale .scale_text2,.nc-lang-iw_IL .nc_scale .scale_text2{text-align:right;}.nc-lang-ar_MA .nc_scale .scale_text2 span,.nc-lang-ar_SA .nc_scale .scale_text2 span,.nc-lang-iw_HE .nc_scale .scale_text2 span,.nc-lang-iw_IL .nc_scale .scale_text2 span{*display:inline-block;padding:0 56px 0 0}.nc-lang-ar_MA .nc_captcha_img_text,.nc-lang-ar_SA .nc_captcha_img_text,.nc-lang-iw_HE .nc_captcha_img_text,.nc-lang-iw_IL .nc_captcha_img_text{*text-align:right}.nc-lang-ar_MA span.nc-lang-cnt,.nc-lang-ar_SA span.nc-lang-cnt,.nc-lang-iw_HE span.nc-lang-cnt,.nc-lang-iw_IL span.nc-lang-cnt{text-align:right;direction:rtl}.nocaptcha span.nc-lang-cnt{float:none;height:auto;line-height:30px}.nc-container{font-size:12px;-ms-touch-action:none;touch-action:none;}.nc-container p{margin:0;padding:0;display:inline}.nc-container .scale_text.scale_text span[data-nc-lang="_startTEXT"]{display:inline-block;width:100%}.nc-container .scale_text.scale_text.slidetounlock span[data-nc-lang="_startTEXT"]{background:-webkit-gradient(linear,left top,right top,color-stop(0,#4d4d4d),color-stop(.4,#4d4d4d),color-stop(.5,#fff),color-stop(.6,#4d4d4d),color-stop(1,#4d4d4d));-webkit-background-clip:text;-webkit-text-fill-color:transparent;-webkit-animation:slidetounlock 3s infinite;-webkit-text-size-adjust:none}.nc-container .nc_scale .nc-align-center.scale_text2{text-align:center;text-indent:-42px}@-webkit-keyframes slidetounlock{0%{background-position:-200px 0}100%{background-position:200px 0}}.nc-container.tb-login .clickCaptcha_text .icon_close{line-height:30px;margin-left:0;cursor:default;color:#ff3f08;font-size:16px;float:left;margin-right:0;background:transparent;z-index:3}.nc-container.tb-login{position:relative;margin-top:20px;display:none;}.nc-container.tb-login .nc_scale{width:auto;}.nc-container.tb-login .nc_scale .scale_text2{text-indent:-42px;text-align:center;}.nc-container.tb-login .nc_scale .scale_text2 b{padding:0}.nc-container.tb-login .nc_scale.nc_err div.scale_text{background:#f79977}.nc-container.tb-login .errloading{width:auto}.nc-container.tb-login .imgCaptcha,.nc-container.tb-login .clickCaptcha{width:252px;*width:256px;border:0;*height:300px;min-height:300px;max-height:inherit !important;}.nc-container.tb-login .imgCaptcha div.login-msg.error,.nc-container.tb-login .clickCaptcha div.login-msg.error{background:#fff2f2}.nc-container.tb-login .imgCaptcha .captcha-error,.nc-container.tb-login .clickCaptcha .captcha-error{position:absolute;top:0;width:244px;height:auto;margin-bottom:15px;padding:3px;border:solid 1px #ff8e8e;line-height:18px}.nc-container.tb-login .imgCaptcha .captcha-inform,.nc-container.tb-login .clickCaptcha .captcha-inform{font-size:110%;margin-left:20px}.nc-container.tb-login .imgCaptcha{padding-top:66px;}.nc-container.tb-login .imgCaptcha .imgCaptcha_text{width:100px;margin-left:0;}.nc-container.tb-login .imgCaptcha .imgCaptcha_text input:focus{color:#000}.nc-container.tb-login .imgCaptcha .imgCaptcha_img{width:120px;_width:100px}.nc-container.tb-login .imgCaptcha .imgCaptcha_btn{width:100%;margin-left:0}.nc-container.tb-login .imgCaptcha .nc_scale_submit{width:100%;height:36px;line-height:36px;margin-top:20px;margin-left:0;border-radius:3px;font-size:16px;font-family:Tahoma,Helvetica,Arial,sans-serif;background:#ff3f08}.nc-container.tb-login .clickCaptcha{padding-top:40px;}.nc-container.tb-login .clickCaptcha .clickCaptcha_text{text-indent:4px}.nc-container.tb-login .clickCaptcha .clickCaptcha_img img{margin-left:10px}.nc-container.tb-login .nc_btn_1{top:77px;_top:57px}.nc-container.tb-login .nc_btn_2{top:36px}.login .nc-container.tb-login .login-msg p,.login-box .nc-container.tb-login .login-msg p{width:auto;float:left}.nc-container.tb-login.nc-old-login{margin:20px 0 10px 0;width:250px;}.nc-container.tb-login.nc-old-login .nc_wrapper{width:250px}.nc-container.tb-login.nc-old-login .imgCaptcha,.nc-container.tb-login.nc-old-login .clickCaptcha{width:250px;min-height:auto;}.nc-container.tb-login.nc-old-login .imgCaptcha .captcha-error,.nc-container.tb-login.nc-old-login .clickCaptcha .captcha-error{line-height:16px}.nc-container.tb-login.nc-old-login .clickCaptcha{padding-top:28px;}.nc-container.tb-login.nc-old-login .clickCaptcha .clickCaptcha_img img{width:200px;height:200px}.nc-container.nc-old-login.show-click-captcha{padding-bottom:60px}.nc-container.nc-old-login.show-click-captcha.nc-tm-min-fix{padding-bottom:40px}.nc-container.tb-login.nc-tm-min-fix .clickCaptcha{max-height:340px !important}#content .login-box .bd .nc-container.tb-login .login-msg{margin:10px auto 15px auto}#content .login-box .bd .nc-container.tb-login.nc-old-login.show-click-captcha .login-msg{margin:2px 0 0 0}.nc-container .nc_scale .nc-cc{display:none;position:absolute;left:0;top:35px;z-index:20000;width:360px;height:570px;border:1px solid #5eaef1;border-radius:4px;background:#fff;font-size:14px;line-height:18px;color:#333;}.nc-container .nc_scale .nc-cc.nc-cc-status-loading .nc-cc-btn,.nc-container .nc_scale .nc-cc.nc-cc-status-verifing .nc-cc-btn{background-color:#90c1eb}.nc-container .nc_scale .nc-cc.nc-cc-status-loading .nc-cc-btn,.nc-container .nc_scale .nc-cc.nc-cc-status-verifing .nc-cc-btn,.nc-container .nc_scale .nc-cc.nc-cc-status-loading .nc-cc-refresh,.nc-container .nc_scale .nc-cc.nc-cc-status-verifing .nc-cc-refresh{cursor:default}.nc-container .nc_scale .nc-cc.nc-cc-status-loading .nc-cc-refresh,.nc-container .nc_scale .nc-cc.nc-cc-status-verifing .nc-cc-refresh{color:#999}.nc-container .nc_scale .nc-cc a{color:#3199f4;text-decoration:none}.nc-container .nc_scale .nc-cc .nc_iconfont{vertical-align:top;margin-right:8px}.nc-container .nc_scale .nc-cc-btn{display:inline-block;*display:inline;*zoom:1;vertical-align:top;letter-spacing:normal;word-spacing:normal;width:100px;line-height:30px;text-align:center;background-color:#3199f4;color:#fff;border-radius:4px;cursor:pointer;}.nc-container .nc_scale .nc-cc-btn.nc-cc-disabled{background-color:#90c1eb;cursor:default}.nc-container .nc_scale .nc-cc-btn .nc-lang-cnt{line-height:18px}.nc-container .nc_scale .nc-cc-header{padding:20px 20px 19px 20px;height:100px;background:#f4f8fa;border-bottom:1px solid #ccc}.nc-container .nc_scale .nc-cc-img1-box{float:left;width:100px;height:100px;margin-right:16px}.nc-container .nc_scale .nc-cc-txt{overflow:hidden;*zoom:1;line-height:30px;padding-top:11px}.nc-container .nc_scale .nc-cc-img2-box{position:relative;padding:0 20px;margin-top:20px}.nc-container .nc_scale .nc-cc-items{position:absolute;left:20px;_left:0;top:0;width:320px;overflow:hidden}.nc-container .nc_scale .nc-cc-items-inner{margin-right:-20px}.nc-container .nc_scale .nc-cc-item{position:relative;display:inline-block;*display:inline;*zoom:1;vertical-align:top;letter-spacing:normal;word-spacing:normal;margin-right:10px;margin-bottom:10px;border:1px solid #ccc;width:98px;height:98px;background:url("//gtms02.alicdn.com/tps/i2/T1ty2QFNNXXXc6Yc2r-1-1.gif");}.nc-container .nc_scale .nc-cc-item:hover{border-color:#3199f4}.nc-container .nc_scale .nc-cc-item .nc_iconfont{display:none;position:absolute;right:0;bottom:0;color:#3199f4;font-size:22px;margin-right:0}.nc-container .nc_scale .nc-cc-item.nc-cc-selected .nc_iconfont{display:block}.nc-container .nc_scale .nc-cc-tip{display:none;position:absolute;left:0;bottom:60px;width:360px;line-height:18px;text-align:center;color:#eb4f38;}.nc-container .nc_scale .nc-cc-tip span{line-height:normal}.nc-container .nc_scale .nc-cc-footer{position:absolute;left:0;bottom:20px;width:360px;height:30px;line-height:30px;text-align:center;}.nc-container .nc_scale .nc-cc-footer .nc_iconfont{color:#c4cbd0}.nc-container .nc_scale .nc-cc-refresh,.nc-container .nc_scale .nc-cc-wait{position:absolute;left:20px;top:0;color:#3199f4;cursor:pointer}.nc-container .nc_scale .nc-cc-wait{display:none}.nc-container .nc_scale .nc-cc-cancel{position:absolute;right:20px;top:0;color:#3199f4;cursor:pointer;}.nc-container .nc_scale .nc-cc-cancel .nc_iconfont{position:relative;top:-1px}.nc-container .nc_scale .nc-cc-loading{margin-top:247px;text-align:center;line-height:14px}.nc-container .nc_scale .nc-cc-loading-img{display:inline-block;*display:inline;*zoom:1;vertical-align:top;letter-spacing:normal;word-spacing:normal;vertical-align:middle;background:url("//img.alicdn.com/tps/TB1OdxsKpXXXXcgXFXXXXXXXXXX-14-14.gif") no-repeat;width:14px;height:14px;position:relative;top:-1px;margin-right:9px}.nc-container .nc_scale .nc-cc-fail{position:absolute;left:50%;top:50%;width:320px;height:180px;margin-left:-160px;margin-top:-90px;background:#fff;border-radius:4px}.nc-container .nc_scale .nc-cc-fail-inner{text-align:center;padding:55px 10px 10px}.nc-container .nc_scale .nc-cc-fail-action{margin:28px 0 18px;}.nc-container .nc_scale .nc-cc-fail-action a{display:inline-block;*display:inline;*zoom:1;vertical-align:top;letter-spacing:normal;word-spacing:normal;line-height:30px;margin-left:16px}.nc-container .nc_scale .nc-cc-contact{text-align:right;color:#666;padding-right:9px}.nc-container .nc_scale .nc-cc-mask{display:none;position:absolute;left:0;top:0;width:360px;height:570px;background:rgba(0,0,0,0.3);filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#4C000000', endColorstr='#4C000000');}:root .nc-container .nc_scale .nc-cc-mask{-webkit-filter:none;filter:none}.nc-container .nc_scale .nc-cc-arrow-1,.nc-container .nc_scale .nc-cc-arrow-2{display:none;position:absolute;top:340px;border:solid transparent;height:0;width:0}.nc-container .nc_scale .nc-cc-arrow-1{border-width:16px;margin-top:-1px}.nc-container .nc_scale .nc-cc-arrow-2{border-width:15px}.nc-container .nc_scale .nc-cc-right .nc-cc-arrow-1,.nc-container .nc_scale .nc-cc-left .nc-cc-arrow-1,.nc-container .nc_scale .nc-cc-right .nc-cc-arrow-2,.nc-container .nc_scale .nc-cc-left .nc-cc-arrow-2{display:block;_display:none}.nc-container .nc_scale .nc-cc-right{left:180px;top:-339px;}.nc-container .nc_scale .nc-cc-right .nc-cc-arrow-1{border-right-color:#5eaef1;left:-32px}.nc-container .nc_scale .nc-cc-right .nc-cc-arrow-2{border-right-color:#fff;left:-30px}.nc-container .nc_scale .nc-cc-left{left:-335px;top:-339px;}.nc-container .nc_scale .nc-cc-left .nc-cc-arrow-1{border-left-color:#5eaef1;right:-32px}.nc-container .nc_scale .nc-cc-left .nc-cc-arrow-2{border-left-color:#fff;right:-30px}</style><style type="text/css">.amap-container{cursor:url(https://webapi.amap.com/theme/v1.3/openhand.cur),default;}.amap-drag{cursor:url(https://webapi.amap.com/theme/v1.3/closedhand.cur),default;}</style><style type="text/css">/*键盘样式*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*所有的点击，不出现阴影的解决办法*/
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+img {
+    vertical-align: top;
+    border: none;
+}
+
+h1, h2, h3, h4, h5, h6, b, strong {
+    font-weight: normal;
+}
+
+.css-_style_clearfix-2qCdF:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.css-_style_clearfix-2qCdF {
+    zoom: 1
+}
+
+.css-_style_fl-3m-zv {
+    float: left;
+}
+
+.css-_style_fr-1ZtFl {
+    float: right;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+.css-_style_typewritingBox-2XKyl {
+    position: fixed;
+    height: 266px;
+    bottom: 0;
+    /*left: 0;*/
+    width: 100%;
+    background: #d8d8d8;
+    z-index: 99;
+    border: 1px solid #eee;
+}
+
+.css-_style_lineBox2-1fITK {
+    width: 100%;
+    height: 40px;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+
+.css-_style_move-3tuOF {
+    position: absolute;
+    top: -21px;
+    left: -1px;
+    width: 20px;
+    height: 20px;
+    display: none;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    border-top: 1px solid #eee;
+}
+
+.css-_style_storageStrokes-2OxDX {
+    width: 100%;
+    height: 30px;
+    overflow-x: auto;
+    /*padding: 5px 0;*/
+    box-sizing: border-box;
+    background: #fff;
+    border-top: 1px solid #eee;
+}
+
+.css-_style_storageStrokes-2OxDX li {
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    line-height: 18px;
+    float: left;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.css-_style_showFontsBox-1nFsY {
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    /*padding:5px 0;*/
+    background: #fff;
+    position: relative;
+    border-top: 1px solid #eee;
+}
+
+.css-_style_push-1fc88 {
+    width: 10%;
+    height: 40px;
+    cursor: pointer;
+    box-sizing: border-box;
+    position: relative;
+    border-left: 1px solid #ddd;
+}
+
+.css-_style_push-1fc88 .css-_style_icon-25DQL {
+    display: block;
+    width: 18px;
+    height: 11px;
+    /*background: url("../img/push.png") no-repeat;*/
+    /*background-size: 100%;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -9px;
+    margin-top: -5px;
+}
+
+.css-_style_fonts-3RMfD {
+    width: 90%;
+    box-sizing: border-box;
+    margin-top: 5px;
+    /*border-right: 1px solid #ddd;*/
+}
+
+.css-_style_fonts-3RMfD li {
+    float: left;
+    width: 12.5%;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    color: #666666;
+    cursor: pointer;
+
+}
+
+.css-_style_loding-25buE {
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    border-right: 1px solid #ddd;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.css-_style_lodingIcon-QcEP7 {
+    width: 16px;
+    position: absolute;
+    left: 50%;
+    margin-left: -5px;
+    margin-top: 12px;
+}
+
+.css-_style_fonts-3RMfD li:active {
+    background: #5894E5;
+    color: #fff;
+}
+
+.css-_style_quitTypeWriting-2zMsw {
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    background: #fff;
+    position: relative;
+    border-top: 1px solid #eee;
+}
+
+.css-_style_quitTypeWriting-2zMsw .css-_style_btn-SljE3 {
+    display: block;
+    width: 18px;
+    height: 11px;
+    /*background: url("../img/back.png");*/
+    /*background-size: 100%;*/
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    cursor: pointer;
+}
+
+/*  */
+.css-_style_keyboard-24aPn {
+    width: 100%;
+    background: #D9D9D9;
+    padding: 5px 1% 5px 1%;
+    box-sizing: border-box;
+}
+
+.css-_style_depositDrawingNumber-2Ss3_ {
+    width: 16%;
+    height: 156px;
+    background: #E2E5E9;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.10);
+    border-radius: 6px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.css-_style_depositDrawingNumber-2Ss3_ li.css-_style_active-1pS5w {
+    background: #298CCF;
+    color: #fff;
+}
+
+.css-_style_depositDrawingNumber-2Ss3_ li {
+    box-sizing: border-box;
+    width: 100%;
+    height: 39px;
+    text-align: center;
+    line-height: 40px;
+    border-bottom: 1px solid #D6D6D6;
+    font-family: PingFangSC-Regular;
+    font-size: 18px;
+    color: #666666;
+    letter-spacing: 0;
+}
+
+.css-_style_keyboard-24aPn .css-_style_bihuaCur-2ts3l {
+    background: #EEEEEE;
+}
+
+/* 留两遍间距 */
+.css-_style_totalStroke-3DTQ_ {
+    width: 70%;
+    padding: 0 1%;
+    box-sizing: border-box;
+}
+
+.css-_style_myStroke-1JQM2 {
+    width: 100%;
+}
+
+.css-_style_myStroke-1JQM2 span {
+    box-sizing: border-box;
+    width: 49.5%;
+    height: 50px;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.10);
+    border-radius: 6px;
+    font-family: PingFangSC-Regular;
+    font-size: 20px;
+    color: #666666;
+    letter-spacing: 0;
+    margin-bottom: 3px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.css-_style_strokeZhe-3I8dM {
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.10);
+    border-radius: 6px;
+    font-family: PingFangSC-Regular;
+    font-size: 20px;
+    color: #666666;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 50px;
+}
+
+.css-_style_deleteSure-2KpSM {
+    width: 14%;
+    height: 156px;
+    box-sizing: border-box;
+}
+
+.css-_style_deleteSure-2KpSM .css-_style_clearAll-SO60F {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ccc;
+    background: #E2E5E9;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.10);
+    border-radius: 4px;
+    /*position: relative;*/
+    font-size: 16px;
+    text-align: center;
+    line-height: 50px;
+    color: #666666;
+    cursor: pointer;
+    margin-bottom: 3px;
+}
+
+.css-_style_deleteSure-2KpSM .css-_style_myDelete-HgP3F {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ccc;
+    background: #E2E5E9;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.10);
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 3px;
+    -moz-user-select: none; /*火狐*/
+    -webkit-user-select: none; /*webkit浏览器*/
+    -ms-user-select: none; /*IE10*/
+    -khtml-user-select: none; /*早期浏览器*/
+    user-select: none;
+}
+
+.css-_style_myDelete-HgP3F .css-_style_icon-25DQL {
+    display: block;
+    width: 23px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -8px;
+    margin-left: -12px;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.css-_style_confirm-2Xptz {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ccc;
+    background: #298CCF;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.10);
+    border-radius: 4px;
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+/**/
+.css-_style_manyFontsBox-CksQo {
+    width: 100%;
+    height: 236px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background: #eee;
+    z-index: 5;
+}
+
+.css-_style_manyFontsBox-CksQo .css-_style_ulOfFont-3e1v7 {
+    width: 100%;
+    height: 193px;
+    box-sizing: border-box;
+    background: #F7F7F7;
+    overflow-y: auto;
+    box-sizing: border-box;
+    border-top: 1px solid #ddd;
+    overflow-x: hidden;
+    /*border: 1px solid #ddd;*/
+}
+.css-_style_phoneScrollBar-3Zt2Z{}
+.css-_style_phoneScrollBar-3Zt2Z::-webkit-scrollbar-track-piece {
+    background-color: rgba(0, 0, 0, 0);
+    border-left: 1px solid rgba(0, 0, 0, 0);
+}
+.css-_style_phoneScrollBar-3Zt2Z::-webkit-scrollbar {
+    width: 5px;
+    height: 13px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.css-_style_phoneScrollBar-3Zt2Z::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-clip: padding-box;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    min-height: 28px;
+}
+.css-_style_phoneScrollBar-3Zt2Z::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.css-_style_ulOfFont-3e1v7 li {
+    width: 20%;
+    height: 33px;
+    text-align: center;
+    line-height: 33px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    float: left;
+    margin-top: -1px;
+    font-size: 20px;
+    /*margin-left: -1px;*/
+    color: #666;
+    background: #F7F7F7;
+    cursor: pointer;
+}
+
+.css-_style_ulOfFont-3e1v7 li:active {
+    background: #5894E5;
+    color: #fff;
+}
+
+.css-_style_manyFontsBox-CksQo strong {
+    display: block;
+    height: 40px;
+    width: 60px;
+    text-align: center;
+    line-height: 35px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 16px;
+    color: #666;
+    letter-spacing: 0;
+    cursor: pointer;
+}
+
+.css-_style_manyFontsBox-CksQo .css-_style_getMoreFonts-V9Naa {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 12px;
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    letter-spacing: 0;
+    cursor: pointer;
+    font-family: '\5FAE\8F6F\96C5\9ED1';
+}
+
+.css-_style_insertMoreLoding-3HKwA {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.css-_style_manyFontsBtns-2nIQX {
+    width: 100%;
+    height: 45px;
+    overflow: hidden;
+}
+
+.css-_style_manyFontsBtn-1U1lf {
+    width: 100%;
+    height: 100%;
+}
+
+.css-_style_inputDiv-3vWSc {
+    height: 30px;
+}
+
+#css-_style_keyboardInput-2pCfo {
+    border: none;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+}
+
+#css-_style_quitTypeWritingBtn-3LsI5 {
+    background-color: #F7F7F7;
+}
+
+#css-_style_mainBox-3wFuN {
+}
+
+#css-_style_myDelete-HgP3F {
+}
+
+#css-_style_quitTypeWritingBtn-3LsI5 {
+}
+
+.css-_style_oneStroke-X-Plr {
+    -moz-user-select: none; /*火狐*/
+    -webkit-user-select: none; /*webkit浏览器*/
+    -ms-user-select: none; /*IE10*/
+    -khtml-user-select: none; /*早期浏览器*/
+    user-select: none;
+}
+
+#css-_style_storageStrokes-2OxDX {
+}
+
+#css-_style_displayFonts-23fqH {
+}
+
+#css-_style_manyFontsBox-CksQo {
+}
+
+#css-_style_comebackMainBox-1c5fs {
+}
+
+#css-_style_getMoreFonts-V9Naa {
+}
+
+#css-_style_clearAll-SO60F {
+}
+
+#css-_style_receiveWord-V8jVo {
+}
+
+.css-_style_typewritinglink-2a3Ql {
+}
+
+#css-_style_quitTypeWritingParent-ubnRC {
+}
+
+#css-_style_showFontsBox-1nFsY {
+}
+
+#css-_style_fzInputDiv-DOYT9 {
+}
+
+
+.css-_style_syncFonts-suIW1{
+    width: 100%;
+}
+.css-_style_inputDiv-3vWSc{
+    width: 75%;
+    background: #fff;
+}
+.css-_style_historyFonts-3aIP9{
+    width: 25%;
+    padding-right: 3%;
+    background: #fff;
+    color: #298CCF;
+    font-size: 15px;
+    line-height: 30px;
+    cursor: pointer;
+    text-align: right;
+}
+
+.css-_style_showHistoryFontsBox-3jQBY {
+    width: 100%;
+    height: 236px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background: #eee;
+    z-index: 11;
+}
+
+.css-_style_showHistoryFontsBox-3jQBY .css-_style_historyFontsBox-29CDj {
+    width: 100%;
+    height: 193px;
+    box-sizing: border-box;
+    background: #F7F7F7;
+    overflow-y: auto;
+    box-sizing: border-box;
+    border-top: 1px solid #ddd;
+    /*border: 1px solid #ddd;*/
+}
+.css-_style_historyFontsBox-29CDj li {
+    width: 20%;
+    height: 33px;
+    text-align: center;
+    line-height: 33px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    float: left;
+    margin-top: -1px;
+    font-size: 20px;
+    /*margin-left: -1px;*/
+    color: #666;
+    background: #F7F7F7;
+    cursor: pointer;
+}
+
+.css-_style_historyFontsBox-29CDj li:active {
+    background: #5894E5;
+    color: #fff;
+}
+.css-_style_backToHistory-1jDJZ {
+    width: 100%;
+    height: 100%;
+    position:relative;
+}
+.css-_style_backToHistory-1jDJZ .css-_style_backToHistoryBtn-28f4j {
+    position: absolute;
+    height: 40px;
+    width: 60px;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 16px;
+    color: #666;
+    letter-spacing: 0;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style><style type="text/css">/*这是输入框的样式*/
+
+
+.css-_input_inputBox-3nql0 {
+    width: 100%;
+    /*height: 100%;*/
+    height:30px;
+    overflow:hidden;
+    background-color: white;
+    position: relative;
+}
+/*列表，用来滚动的*/
+.css-_input_inputList-10qhC {
+    background-color: white;
+    height: 100%;
+    display: inline-block;
+    display: inline-flex;
+    position: absolute;
+    left:0;
+    box-sizing: border-box;
+}
+/*一个字的样式*/
+.css-_input_inputWord-2Z1aM {
+    float: left;
+    font-size:16px;
+    line-height: 30px;
+    display: block;
+    font-family:inherit;
+}
+/*光标样式*/
+.css-_input_inputCursor-3ZpAx {
+    float: left;
+    width: 1px;
+    height:24px;
+    margin-top:3px;
+    background-color: white;
+}
+.css-_input_inputCursor-3ZpAx.css-_input_active-2bh2q{
+    background-color: black;
+}
+
+.css-_input_disSelect-2RZLE{
+    moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -o-user-select:none;
+    -khtml-user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+</style><style type="text/css">.vue-pull-to-wrapper[data-v-81faaf1a],
+.vue-pull-to-wrapper > .scroll-container[data-v-81faaf1a] {
+  padding: 0;
+  border: 0 none;
+  margin: 0;
+}
+.vue-pull-to-wrapper[data-v-81faaf1a] {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+.vue-pull-to-wrapper > .scroll-container[data-v-81faaf1a] {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+.vue-pull-to-wrapper > .scroll-container > .bottom-filler[data-v-81faaf1a] {
+  height: 0px;
+}
+.vue-pull-to-wrapper > .action-block[data-v-81faaf1a] {
+  position: relative;
+  width: 100%;
+}
+.vue-pull-to-wrapper > .action-block > .default-text[data-v-81faaf1a] {
+  height: 100%;
+  line-height: 50px;
+  text-align: center;
+}
+.vue-pull-to-wrapper[data-v-81faaf1a],
+.vue-pull-to-wrapper > .action-block-bottom[data-v-81faaf1a],
+.vue-pull-to-wrapper > .scroll-container > .bottom-fill[data-v-81faaf1a] {
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0, 1);
+          transition-timing-function: cubic-bezier(0, 0, 0, 1);
+}
+</style><link rel="stylesheet" type="text/css" href="./static/css/commons.9ffb87ecabc8563850da.css"><script charset="utf-8" src="./static/js/commons.8db4bf2599beedc07e12.js"></script><link rel="stylesheet" type="text/css" href="./static/css/home.a0f2e67d767975746a10.css"><script charset="utf-8" src="./static/js/home.f67cece2d5789d992955.js"></script><link rel="stylesheet" type="text/css" href="./static/css/31.f2a734376e4fcd4b9458.css"><script charset="utf-8" src="./static/js/31.b386514301c206426fc6.js"></script><script src="file:///android_asset/www/cordova_plugins.js"></script><script src="file:///android_asset/www/plugins/com.servyou.aliyunpush/www/aliyunpush.js"></script><script src="file:///android_asset/www/plugins/com.servyou.analytics/www/analytics.js"></script><script src="file:///android_asset/www/plugins/com.servyou.launchhotcode/www/hotCode.js"></script><script src="file:///android_asset/www/plugins/com.servyou.nativeshare/www/nativeshare.js"></script><script src="file:///android_asset/www/plugins/cordova-hot-code-push-plugin-renew/www/chcp.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-file/www/DirectoryEntry.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-file/www/DirectoryReader.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-file/www/Entry.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-file/www/File.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-file/www/FileEntry.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-file/www/FileError.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-file/www/FileReader.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-file/www/FileSystem.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-file/www/FileUploadOptions.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-file/www/FileUploadResult.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-file/www/FileWriter.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-file/www/Flags.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-file/www/LocalFileSystem.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-file/www/Metadata.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-file/www/ProgressEvent.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-file/www/fileSystems.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-file/www/requestFileSystem.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-file/www/resolveLocalFileSystemURI.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-file/www/browser/isChrome.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-file/www/android/FileSystem.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-file/www/fileSystems-roots.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-file/www/fileSystemPaths.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-advanced-http/www/lodash.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-advanced-http/www/umd-tough-cookie.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-advanced-http/www/messages.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-advanced-http/www/local-storage-store.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-advanced-http/www/cookie-handler.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-advanced-http/www/helpers.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-advanced-http/www/advanced-http.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-aliyun-rpc/www/aliyunRpc.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-app/www/app.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-app-version/www/AppVersionPlugin.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-camera/www/CameraConstants.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-camera/www/CameraPopoverOptions.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-camera/www/Camera.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-camera/www/CameraPopoverHandle.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-customurlscheme/www/android/LaunchMyApp.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-device/www/device.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-etas-ifaa/www/etasIfaa.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-file-opener2/www/plugins.FileOpener2.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-file-transfer/www/FileTransferError.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-file-transfer/www/FileTransfer.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-geolocation/www/android/geolocation.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-geolocation/www/PositionError.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-image-resizer/www/imageresize.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-inappbrowser/www/inappbrowser.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-keyboard/www/keyboard.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-network-information/www/network.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-network-information/www/Connection.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-photo-gallery/www/photoGallery.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-sim/www/sim.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-sim/www/android/sim.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-splashscreen/www/splashscreen.js"></script><script src="file:///android_asset/www/plugins/cordova-plugin-statusbar/www/statusbar.js"></script><script src="file:///android_asset/www/plugins/phonegap-plugin-barcodescanner/www/barcodescanner.js"></script><link rel="stylesheet" type="text/css" href="./static/css/63.56708035d2f55b2ace0b.css"><script charset="utf-8" src="./static/js/63.2223349d037705a80c1f.js"></script><script charset="utf-8" src="./static/js/3.8b85c140cabb0f4620cb.js"></script><script charset="utf-8" src="./static/js/4.ff21953e25c9fab7b933.js"></script><script charset="utf-8" src="./static/js/5.bb51b9ed2dea7d3716d3.js"></script><link rel="stylesheet" type="text/css" href="./static/css/66.6d4cc189a61e8b174b14.css"><script charset="utf-8" src="./static/js/66.50185fe8bdd9529866f3.js"></script><style type="text/css">.icon-delete{display: none !important;}.its-header-left{pointer-events: none !important}</style><link rel="stylesheet" type="text/css" href="./static/css/93.99d908d2894d0aa86103.css"><script charset="utf-8" src="./static/js/93.ff7d212339a4f73ba89b.js"></script><link rel="stylesheet" type="text/css" href="./static/css/85.bed8406821267ae66991.css"><script charset="utf-8" src="./static/js/85.7f3022b0687cd3212d02.js"></script><link rel="stylesheet" type="text/css" href="./static/css/189.943cb0f638a58b3a0de0.css"><script charset="utf-8" src="./static/js/189.39920368969ac3e3fc0f.js"></script><style type="text/css">.its-header-left{pointer-events: none !important}.weui-cells_checkbox,.weui-cell_access{pointer-events: none !important}</style><link rel="stylesheet" type="text/css" href="./static/css/188.7238fe92c55b130a96da.css"><script charset="utf-8" src="./static/js/188.3fc42a63a0be556063b6.js"></script></head><body class="default theme-default android android_11" style="font-size: 12px; z-index: 436;" listener="true"><div class="app-container"><div class="page-container incomeTaxPayment-list" style="height: 100vh;"><div class="its-header its-header_ its-header_normal tax-header_fixed" style="background-image: url(&quot;&quot;);"><div class="its-header-wrapper"><div class="its-header-left"><i class="its-header-back-icon icon iconfont icon-back"></i> <i class="its-header-left-icon icon iconfont" style="display: none;"></i> <a class="its-header-back">
+            返回
+          </a> </div> <div class="its-header-title"><p>
+    收入纳税明细查询
+    </p></div> <!----> <div class="its-header-right"><!----> <button type="" name="" class="its-btn its-btn_small its-btn_text" style=""><!---->
+      批量申诉
+    </button></div></div> <div class="its-header-down-content"></div></div> <div class="page-wrapper page-wrapper__default" id="tax_Record_box_body"><div class="page-inset"><div class="scroll-box"><div class="vux-sticky-box"><div class="c-income-container c-line"><div class="c-item-box srhj"><span>
+              收入合计
+              <div class="ndhsqj-popover" style="min-width: 22px;"><i slot="right" class="iconfont icon-wenhao popover-icon"></i> <div class="icon-tips-wrapper2" style="display: none; top: 31px; left: -84.2917px;"><div class="icon-tips-content">针对所得项目小类为个人股权激励收入的，仅统计全年最后一次有效申报中所填写的收入</div></div> <div class="jt2" style="display: none;"></div></div> ：
+            </span> <span>48691.96元</span></div> <div class="c-item-box ysbsehj"><span>已申报税额合计：</span> <span>617.22元</span></div></div></div> <div data-v-81faaf1a="" class="vue-pull-to-wrapper" style="height: 100%;"><!----> <div data-v-81faaf1a="" class="scroll-container"><div data-v-81faaf1a=""><!---->  <div class="weui-cells its-no-group-title"> <div class="c-tax-record-item-container"><div class="c-tax-record-item-left"><div class="c-tax-record-item-title">
+                工资薪金
+                <span class="title-rg"> 2022-08 </span></div> <div class="c-tax-record-item-date"><span class="lf">所得项目小类：</span><span class="rg">正常工资薪金</span></div> <div class="c-tax-record-item-date"><span class="lf">扣缴义务人：</span><span class="rg">深圳市***有限公司</span></div> <div class="c-tax-record-item-date"><span class="lf">收入：</span><span class="rg">11000.00元</span></div> <div class="c-tax-record-item-date"><span class="lf">已申报税额：</span><span class="rg">161.07元</span></div></div> <div class="c-tax-record-item-right"><div class="c-tax-record-status"><i class="icon iconfont icon-enter c-icon-enter-sty"></i></div></div></div></div></div><div data-v-81faaf1a=""><!---->  <div class="weui-cells its-no-group-title"> <div class="c-tax-record-item-container"><div class="c-tax-record-item-left"><div class="c-tax-record-item-title">
+                工资薪金
+                <span class="title-rg"> 2022-07 </span></div> <div class="c-tax-record-item-date"><span class="lf">所得项目小类：</span><span class="rg">正常工资薪金</span></div> <div class="c-tax-record-item-date"><span class="lf">扣缴义务人：</span><span class="rg">深圳市***有限公司</span></div> <div class="c-tax-record-item-date"><span class="lf">收入：</span><span class="rg">11005.00元</span></div> <div class="c-tax-record-item-date"><span class="lf">已申报税额：</span><span class="rg">161.50元</span></div></div> <div class="c-tax-record-item-right"><div class="c-tax-record-status"><i class="icon iconfont icon-enter c-icon-enter-sty"></i></div></div></div></div></div><div data-v-81faaf1a=""><!---->  <div class="weui-cells its-no-group-title"> <div class="c-tax-record-item-container"><div class="c-tax-record-item-left"><div class="c-tax-record-item-title">
+                工资薪金
+                <span class="title-rg"> 2022-06 </span></div> <div class="c-tax-record-item-date"><span class="lf">所得项目小类：</span><span class="rg">正常工资薪金</span></div> <div class="c-tax-record-item-date"><span class="lf">扣缴义务人：</span><span class="rg">深圳市***有限公司</span></div> <div class="c-tax-record-item-date"><span class="lf">收入：</span><span class="rg">9900.00元</span></div> <div class="c-tax-record-item-date"><span class="lf">已申报税额：</span><span class="rg">128.35元</span></div></div> <div class="c-tax-record-item-right"><div class="c-tax-record-status"><i class="icon iconfont icon-enter c-icon-enter-sty"></i></div></div></div></div></div><div data-v-81faaf1a=""><!---->  <div class="weui-cells its-no-group-title"> <div class="c-tax-record-item-container"><div class="c-tax-record-item-left"><div class="c-tax-record-item-title">
+                工资薪金
+                <span class="title-rg"> 2022-05 </span></div> <div class="c-tax-record-item-date"><span class="lf">所得项目小类：</span><span class="rg">正常工资薪金</span></div> <div class="c-tax-record-item-date"><span class="lf">扣缴义务人：</span><span class="rg">深圳市***有限公司</span></div> <div class="c-tax-record-item-date"><span class="lf">收入：</span><span class="rg">9900.00元</span></div> <div class="c-tax-record-item-date"><span class="lf">已申报税额：</span><span class="rg">128.34元</span></div></div> <div class="c-tax-record-item-right"><div class="c-tax-record-status"><i class="icon iconfont icon-enter c-icon-enter-sty"></i></div></div></div></div></div><div data-v-81faaf1a=""><!---->  <div class="weui-cells its-no-group-title"> <div class="c-tax-record-item-container"><div class="c-tax-record-item-left"><div class="c-tax-record-item-title">
+                工资薪金
+                <span class="title-rg"> 2022-04 </span></div> <div class="c-tax-record-item-date"><span class="lf">所得项目小类：</span><span class="rg">正常工资薪金</span></div> <div class="c-tax-record-item-date"><span class="lf">扣缴义务人：</span><span class="rg">深圳市***有限公司</span></div> <div class="c-tax-record-item-date"><span class="lf">收入：</span><span class="rg">6886.96元</span></div> <div class="c-tax-record-item-date"><span class="lf">已申报税额：</span><span class="rg">37.96元</span></div></div> <div class="c-tax-record-item-right"><div class="c-tax-record-status"><i class="icon iconfont icon-enter c-icon-enter-sty"></i></div></div></div></div></div> <!----> <!----></div> <div data-v-81faaf1a="" class="action-block action-block-bottom" style="height: 50px; margin-bottom: -50px;"><p data-v-81faaf1a="" class="default-text"></p></div></div></div></div></div></div> <!----> <div class="its-toast"><div class="its-toast-wrapper"><div class="its-toast-title"><i class="icon iconfont icon-success"></i></div></div></div> <!----> <!----> <div class="welcome-page" style="display: none;"><div class="vux-slider"><div class="vux-swiper" style="height: 100vh;"><div class="vux-swiper-item welcome-swipe w1" style="transform: translate3d(0px, 0px, 0px);"></div> <div class="vux-swiper-item welcome-swipe w2" style="transform: translate3d(400px, 0px, 0px);"></div> <div class="vux-swiper-item welcome-swipe w3" style="transform: translate3d(800px, 0px, 0px);"></div>  </div> <div class="dot vux-indicator vux-indicator-center"><a href="javascript:"><i class="vux-icon-dot active"></i></a><a href="javascript:"><i class="vux-icon-dot"></i></a><a href="javascript:"><i class="vux-icon-dot"></i></a></div></div> <button type="" name="" class="skip-btn its-btn its-btn_default"><!---->
+      跳过
+    </button></div> <div class="agreement-dialog vux-multiple vux-dialog-big" style="display: none;"><div class="vux-x-dialog"><div class="weui-mask" style="display: none;"><div class="weui-dialog" style="display: none;"><div class="custom-panel"><div class="pop-authorize__hd"><img src="./static/images/agree-icon.3b7ae19.png" class="agree-icon"> <div class="pop-authorize__hd-title"> <p>自然人电子税务局</p> <p>个人信息及隐私保护政策</p> <p class="title-desc">（更新生效日期：2021年11月1日）</p></div></div></div> <div class="pop-authorize__bd"><div class="pop-authorize__bd-text1"><div class="register-agreement-content"><div><div class="register-agreement-content"><section class="register-agreement-details-section"><h4></h4> <p class="register-agreement-details-text">自然人电子税务局（以下简称“我们”）是国家税务总局根据《中华人民共和国税收征收管理法》《中华人民共和国个人所得税法》等法律法规，依法面向自然人、扣缴义务人等提供一体化征收管理、纳税服务等业务处理的综合服务平台，包括：“自然人电子税务局”网页版、“个人所得税”APP、“自然人电子税务局”扣缴端。个人信息及隐私保护政策（以下简称“本政策”）将帮助您了解我们如何处理您的个人信息，内容包括：</p><p class="register-agreement-details-text">一、我们如何收集和使用您的个人信息</p><p class="register-agreement-details-text">二、我们如何对外提供您的个人信息</p><p class="register-agreement-details-text">三、我们如何保护您的个人信息</p><p class="register-agreement-details-text">四、您的权利</p><p class="register-agreement-details-text">五、我们如何处理未成年人的个人信息</p><p class="register-agreement-details-text">六、本政策如何更新</p><p class="register-agreement-details-text">七、法律声明</p><p class="register-agreement-details-text">八、其他</p><p class="register-agreement-details-text">九、如何联系我们</p><p class="register-agreement-details-text">我们非常重视您的个人信息和隐私保护。在自然人电子税务局的建设和运营过程中，我们遵循《中华人民共和国网络安全法》《中华人民共和国个人信息保护法》等法律法规要求，采取相应的措施以保护您的个人信息安全。</p><p class="register-agreement-details-text">在使用自然人电子税务局功能或服务前，请您务必仔细阅读并了解本政策。若您使用我们的功能或服务，即表示您同意本政策中所述内容。如果您对本政策有任何疑问、意见或建议，请通过本政策公布的联系方式与我们联系。</p><p class="register-agreement-details-text"><strong>特别提示：</strong></p><p class="register-agreement-details-text">扣缴义务人、第三方涉税服务机构等根据用工合同、委托协议等收集的个人信息，在其未上传至自然人电子税务局服务器端或在本地存储备份的，不适用于本政策。</p><p class="register-agreement-details-text">我们通过页面嵌入、链接跳转等方式集成的第三方应用系统向您提供的服务，不适用于本政策。我们建议您查看第三方应用系统的信息保护声明，以了解他们如何处理您的信息。对于您向第三方应用系统提供或向他人主动共享、披露的个人信息，产生的后果由您自行承担。</p></section><section class="register-agreement-details-section"><h4>一、我们如何收集和使用您的个人信息</h4> <p class="register-agreement-details-text">个人信息是以电子或者其他方式记录的与已识别或者可识别的自然人有关的各种信息，不包括匿名化处理后的信息。</p><p class="register-agreement-details-text">敏感个人信息是一旦泄露或者非法使用，容易导致自然人的人格尊严受到侵害或者人身、财产安全受到危害的个人信息。</p><p class="register-agreement-details-text">在您使用自然人电子税务局的功能或服务过程中，我们会按照如下方式收集您主动提供或因您使用而产生的个人信息，以向您提供、优化我们的服务并保障您的个人信息安全：</p><p class="register-agreement-details-text">1.在您成为自然人电子税务局用户时，可以通过下述两种方式完成注册认证并创建密码，在此，我们强烈的建议您设置与其他网络应用不同的个性化密码。方式一，大厅注册码方式：您可以前往当地税务机关办税服务厅获取注册码，并提供您的姓名、证件类型、证件号码、国籍、手机号码信息完成注册认证；方式二，人脸识别认证方式：除方式一提供的信息外，您还需要提供人脸影像信息以完成注册认证。我们收集您的这些信息是为了满足纳税服务及网络实名制相关法律法规的要求，并保护您的账号安全。您可以根据自身需要选择是否使用这些服务，如果您仅需要使用票证查验、通知公告、税收政策及解读、办税指南等基本服务，您不需要注册成为我们的用户及提供上述信息。</p><p class="register-agreement-details-text">2.当您通过自然人电子税务局，使用个人所得税专项附加扣除、在线申报、在线缴纳税款、申请退税等个性化服务时，根据《中华人民共和国个人所得税法》的规定，需要您提供子女教育、继续教育、大病医疗、住房贷款利息或者住房租金、赡养老人等支出信息；根据《国务院关于印发个人所得税专项附加扣除暂行办法的通知》（国发〔2018〕41号）的规定，需要您提供专项附加扣除相关信息，包括纳税人本人、配偶、子女、被赡养人等个人身份信息，以及国务院税务主管部门规定的其他与专项附加扣除相关的信息（如出生日期、性别、户籍所在地、经常居住地、联系地址、学历、电子邮箱、其他身份证件、银行账号等）。</p><p class="register-agreement-details-text">我们会严格保护您的个人信息，您可以根据自身需要选择是否使用这些个性化服务。如果您不提供这些信息，将会影响到您使用个性化服务，但不会影响您使用我们的基本服务。</p><p class="register-agreement-details-text">3.当您使用我们的功能或服务时，基于保障系统正常运行，改进优化使用体验，如提供更契合您需求的智能硬件/软件、页面展示等原因，我们会收集您的设备信息及日志信息。这些信息是为您提供优质服务、保护网络和个人信息安全必须收集的基础信息。</p><p class="register-agreement-details-text">设备信息：在您安装及使用个人所得税APP时，我们会根据您授予的具体权限，收集并记录您使用设备的相关信息，包括设备名称、设备型号、设备识别号、设备制造商、硬件序列号、系统版本、IMEI串号、运营商名称、手机号码、移动国家码和移动网络码、网卡物理地址、CPU型号等。</p><p class="register-agreement-details-text">日志信息：当您使用我们的功能或服务时，为帮助我们提供优质的个性化服务，我们可能会收集您的使用情况信息，包括您的搜索查询内容（仅限个人所得税APP）、IP地址、浏览器类型、通信运营商、语言、访问日期和时间等。为帮助我们更好地了解系统的运行情况以优化服务，我们可能会收集系统分析信息，包括使用频率、程序错误、功能点击次数、总体使用情况等，我们不会将分析信息与您在应用程序中提供的任何个人身份信息相结合。</p><p class="register-agreement-details-text">4.设备权限调用：</p><p class="register-agreement-details-text">个人所得税APP在安装和提供服务过程中，会调用您的一些设备权限，您可以在设备的设置功能中选择关闭部分或全部权限，从而拒绝我们收集与使用相应的个人信息。</p><p class="register-agreement-details-text">（1）当您使用个人所得税APP的“拍照上传”、“本地图片上传”、“本地文件上传”等功能时，我们会在您授权同意后获取设备的相机使用权限或存储权限。拒绝提供该权限会使您无法正常使用相关上传功能。</p><p class="register-agreement-details-text">（2）当您使用个人所得税APP的“扫一扫”、“票证查验”和“人脸识别认证注册”功能时，我们会在您授权同意后，获取设备的相机使用权限。如果您拒绝提供该权限，您将无法正常使用“扫一扫”、“票证查验”和“人脸识别认证注册”功能。</p><p class="register-agreement-details-text">（3）当您使用个人所得税APP提供的服务时，我们会在您授权同意后，获取设备的位置权限，读取设备的地理位置信息，以便基于您所处位置享受所在地区税务机关的个性化服务，我们不会在服务器端对您移动设备的地理位置信息进行存储。如果您拒绝提供该权限，您将无法自动定位所在地区，但您仍然可以手动进行地区选择，以便您获取所在地区税务机关的个性化服务。</p><p class="register-agreement-details-text">（4）为了方便您在不需要打开个人所得税APP的情况下，快捷收取相关信息，我们会在您授权同意后，获取设备的通知权限。如果您拒绝提供该权限，您将无法通过消息推送机制收取相关信息，但不影响您使用个人所得税APP提供的其他服务。</p><p class="register-agreement-details-text">5.在您使用个人所得税APP功能或服务过程中，为了优化消息推送的服务体验和质量，我们在消息推送功能内嵌了第三方软件开发工具包（以下简称SDK），第三方SDK会收集您设备的相关信息。</p><p class="register-agreement-details-text">以下内容为我们向第三方获取的本政策生效时第三方SDK信息收集项说明，内容由SDK所属第三方提供，本政策仅作转述。请注意，对于第三方SDK收集的信息，由第三方承担保密责任，详情请参考第三方隐私保护政策。</p><p class="register-agreement-details-text">OPPO推送：由OPPO广东移动通信有限公司提供技术支持，SDK可能读取您的位置信息、无线网络设备MAC、无线网络列表、设备MAC地址、网络类型信息。</p><p class="register-agreement-details-text">小米推送：由小米科技有限责任公司提供技术支持，SDK可能读取您的手机型号、手机序列号、无线网络名称。</p><p class="register-agreement-details-text">华为推送：由华为技术有限公司提供技术支持，SDK可能读取您的设备信息（包括连接的无线网络设备MAC、无线网络列表、设备MAC地址、网络类型、手机型号、手机序列号、无线网络名称）和位置信息。</p><p class="register-agreement-details-text">如果您不希望使用上述第三方SDK提供的推送服务，您可以在手机自身的设置中关闭个人所得税APP的通知权限，此操作不影响您使用我们提供的其他服务。</p><p class="register-agreement-details-text">6.经您了解并同意，我们可以通过技术手段对您的个人信息进行去标识化处理，去标识化处理的信息将无法识别您的身份。在此情况下，并在符合相关法律法规及监管政策的前提下，我们可以使用已经去标识化的信息，对其进行分析和利用。</p><p class="register-agreement-details-text">7.根据相关法律法规，以下情形中，我们可能会处理您的个人信息而无需征得您的授权同意：</p><p class="register-agreement-details-text">（1）为订立、履行个人作为一方当事人的合同所必需，或者按照依法制定的劳动规章制度和依法签订的集体合同实施人力资源管理所必需；</p><p class="register-agreement-details-text">（2）为履行法定职责或者法定义务所必需；</p><p class="register-agreement-details-text">（3）为应对突发公共卫生事件，或者紧急情况下为保护自然人的生命健康和财产安全所必需；</p><p class="register-agreement-details-text">（4）为公共利益实施新闻报道、舆论监督等行为，在合理的范围内处理个人信息；</p><p class="register-agreement-details-text">（5）依照本法规定在合理的范围内处理个人自行公开或者其他已经合法公开的个人信息；</p><p class="register-agreement-details-text">（6）法律、行政法规规定的其他情形。</p><p class="register-agreement-details-text">8.请您理解，我们向您提供的功能或服务是不断更新和发展的，如果某一功能或服务未在前述说明中且收集了不属于履行法定职责或者法定义务所必须的个人信息，我们会通过页面提示、交互流程、网站公告等方式另行向您说明信息收集的目的、范围和内容，以征得您的同意。</p><p class="register-agreement-details-text">9.如果我们停止运营自然人电子税务局的功能或服务，我们将及时停止收集您的个人信息，将停止运营的通知以页面提示、网站公告或公开声明的形式通知您，并根据适用法律的要求处理您的个人信息。</p></section><section class="register-agreement-details-section"><h4>二、我们如何对外提供您的个人信息</h4> <p class="register-agreement-details-text">（一）共享</p><p class="register-agreement-details-text">我们不会与国家税务总局及所属税务机关之外的个人信息处理者共享您的个人信息。但由于部分功能或服务依赖于第三方系统，可能出现业务流转处理或法定情形下向第三方系统共享您个人信息的情况，我们会遵循以下原则：</p><p class="register-agreement-details-text">1.获得单独同意情形下的共享：获得您的单独同意后，我们会向第三方共享您的个人信息，并向您告知第三方个人信息处理者的名称或者姓名、联系方式、处理目的、处理方式和个人信息的种类。</p><p class="register-agreement-details-text">2.法定情形下的共享：我们可能会根据法律法规的规定或按行政、司法等机关依法提出的要求，对相关部门共享您的个人信息无需征得您的同意。</p><p class="register-agreement-details-text">3.我们可能会向移动运营商提供您的手机号码信息，以便及时向您的移动设备发送消息或服务通知。</p><p class="register-agreement-details-text">4.我们可能会向银联、云闪付、支付宝、微信支付等机构提供您的支付账号信息，以便您通过自然人电子税务局办理缴税、退补税等业务。</p><p class="register-agreement-details-text">（二）公开披露</p><p class="register-agreement-details-text">1.我们不会将您的个人信息进行公开披露。如必须公开披露时，我们会向您告知公开披露的目的、披露信息的类型及可能涉及的敏感个人信息，并征得您的单独同意。</p><p class="register-agreement-details-text">2.法定情形下的披露：我们可能会根据法律法规的规定或按行政、司法等机关依法提出的要求，公开披露您的个人信息无需征得您的同意。</p></section><section class="register-agreement-details-section"><h4>三、我们如何保护您的个人信息</h4> <p class="register-agreement-details-text">1.我们已使用符合业界标准的安全防护措施保护您提供的个人信息，防止数据遭到未经授权访问、公开披露、使用、修改、损坏或丢失。我们会采取一切合理可行的措施，保护您的个人信息，我们会使用加密技术确保数据的保密性；我们会使用受信赖的保护机制防止数据遭到恶意攻击；我们会部署访问控制机制，确保只有授权人员才可访问个人信息。</p><p class="register-agreement-details-text">2.我们会定期组织开展个人信息保护影响评估和系统安全风险评估，并与监管机构建立了良好的协调沟通机制，及时抵御并处置各类网络安全威胁，为您的信息安全提供全面保障。</p><p class="register-agreement-details-text">3.我们在运营中收集和产生的个人信息，存储在中华人民共和国境内。为保护您的数据安全，备份数据也会在中华人民共和国境内转移。</p><p class="register-agreement-details-text">4.我们会采取一切合理可行的措施，确保处理的个人信息为履行法定职责或者法定义务所必需。我们只会在达成本政策所述目的所需期限内保留您的个人信息，受相关法律法规允许需要延长保留期的除外。</p><p class="register-agreement-details-text">5.由于技术水平限制及可能存在的各种恶意手段，安全问题有可能因我们可控范围外的因素而出现。在发生个人信息安全事件后，我们将按照相关法律法规及监管政策的要求，及时向您告知，难以逐一告知个人信息主体时，我们会采取合理方式发布公告。同时，我们还将按照监管部门要求，主动上报个人信息安全事件的处置情况。</p></section><section class="register-agreement-details-section"><h4>四、您的权利</h4> <p class="register-agreement-details-text">在您使用我们的功能或服务期间，为了您可以便捷地访问和管理您的个人信息，同时保障您注销账号、撤回单独同意等权利，我们在功能和服务设计中为您提供了相应的操作设置，您可以参考下面的指引进行操作。</p><p class="register-agreement-details-text">1.访问、修改个人信息</p><p class="register-agreement-details-text">（1）通过“自然人电子税务局”网页版或“个人所得税”APP登录自然人电子税务局系统；</p><p class="register-agreement-details-text">（2）依次点击“个人中心”-“个人信息”-“基本信息”，可以修改您的出生日期、性别、户籍所在地、经常居住地、联系地址、学历、电子邮箱等基础信息；</p><p class="register-agreement-details-text">（3）依次点击“个人中心”-“安全中心”，可以修改您的手机号码、登录密码，其中手机号码、登录密码更新需进行二次认证方可完成修改。</p><p class="register-agreement-details-text">2.注销账号</p><p class="register-agreement-details-text">（1）通过“自然人电子税务局”网页版或“个人所得税”APP登录自然人电子税务局系统；</p><p class="register-agreement-details-text">（2）依次点击“个人中心”-“安全中心”-“注销账号”，进行注销操作，注销后即刻生效。</p><p class="register-agreement-details-text">（3）您也可以前往所属税务机关办税服务厅通过办理个人账号业务实现账号注销。</p><p class="register-agreement-details-text">账号注销后，我们将停止为您提供个性化服务，并会根据相关法律法规要求删除您的个人信息或对其进行匿名化处理，法律法规另有规定的除外。</p><p class="register-agreement-details-text">3. 撤回单独同意</p><p class="register-agreement-details-text">（1）通过“个人所得税”APP登录自然人电子税务局系统；</p><p class="register-agreement-details-text">（2）依次点击“个人中心”-“关于”-“协议”，可以查看相关协议名称和内容；</p><p class="register-agreement-details-text">（3）选择您需要撤回的单独同意协议，点击“撤回同意”，即可撤回对单独同意协议的授权；反之，您也可以通过此界面对单独同意协议重新授权。</p><p class="register-agreement-details-text">撤回单独同意不影响您撤回同意前基于个人同意已进行的个人信息处理活动的效力。</p></section><section class="register-agreement-details-section"><h4>五、我们如何处理未成年人的个人信息</h4> <p class="register-agreement-details-text">我们的功能和服务主要面向成人。如果没有父母或监护人的同意，未成年人不应创建自己的用户账号。我们将未满14周岁的任何人均视为未成年人。</p><p class="register-agreement-details-text">我们非常重视未成年人的信息保护，将未成年人个人信息作为敏感个人信息制定专门的个人信息处理规则。对于经父母或监护人同意处理未成年人个人信息的情况，我们只会在受到法律允许、父母或监护人明确同意的情况下提供或公开此信息。</p></section><section class="register-agreement-details-section"><h4>六、本政策如何更新</h4> <p class="register-agreement-details-text">我们可能会适时对本政策进行修订。当本政策的条款发生变更时，我们会在版本更新时向您提供显著的通知，包括通过我们公示的方式进行意见征集、公告通知甚至向您提供弹窗提示等。</p><p class="register-agreement-details-text">本政策所指的变更内容包括但不限于：</p><p class="register-agreement-details-text">1.我们的服务模式发生重大变化，如处理个人信息的目的、个人信息的使用方式等；</p><p class="register-agreement-details-text">2.我们在控制权、组织架构等方面发生重大变化；</p><p class="register-agreement-details-text">3.个人信息共享、转让或公开披露的主要对象发生变化；</p><p class="register-agreement-details-text">4.我们负责处理个人信息安全的责任部门、联络方式及投诉渠道发生变化；</p><p class="register-agreement-details-text">5.个人信息保护影响评估报告表明存在高风险时。</p></section><section class="register-agreement-details-section"><h4>七、法律声明</h4> <p class="register-agreement-details-text">1.权利归属</p><p class="register-agreement-details-text">自然人电子税务局的Logo、名称、图形、配色及其组合，以及其他标识、徽记等为自然人电子税务局在中国和其他国家的专有标识。未经我们书面授权，任何人不得以任何方式展示、使用或做其他处理（包括但不限于复制、传播、展示、镜像、上传、下载），也不得向他人表明您有权展示、使用或做其他处理。</p><p class="register-agreement-details-text">自然人电子税务局所有的产品、服务、技术与所有应用程序或其组件和功能的知识产权均归属于自然人电子税务局或国家税务总局所有。除非另行声明，我们拥有在自然人电子税务局系统内发布的全部信息（包括但不限于所有应用程序、文字、图形、图片、照片、音频、视频、图标、色彩、版面设计、电子文档）的所有权利（包括但不限于版权、商标权、专利权、商业秘密和其他所有相关权利）。未经我们许可，任何人不得擅自使用如上内容（包括但不限于通过程序或设备监视、展示、镜像、窃取、复制、爬取、仿冒、传播、上传、下载等）。被授权浏览、复制、打印和传播属于自然人电子税务局功能和服务信息内容的，该内容不得用于商业目的且必须注明引用来源，并声明权利归属为我们。</p><p class="register-agreement-details-text">2.责任限制</p><p class="register-agreement-details-text">自然人电子税务局用户在“自然人电子税务局”网页版、“个人所得税”APP上自行上传、提供、发布的信息，包括但不限于个人信息、用户名称、单位名称、联系人及联络信息、相关图片等，均由用户自行提供，自然人电子税务局用户对其提供的任何信息依法承担全部责任。</p><p class="register-agreement-details-text">您在使用自然人电子税务局的功能或服务期间应当遵守中华人民共和国的法律，不得危害网络安全、数据安全和个人信息安全，不得利用自然人电子税务局的功能或服务从事侵犯他人名誉、隐私、知识产权及其他合法权益的活动。尽管有前述提示，我们不对您使用自然人电子税务局功能或服务的用途和目的承担任何责任。如果您存在违规使用行为，我们有权停止您的账号使用，并依法向有关部门报告。</p><p class="register-agreement-details-text">3.知识产权保护</p><p class="register-agreement-details-text">我们尊重知识产权，反对并打击侵犯知识产权的行为。任何组织或个人认为自然人电子税务局提供的功能及服务，可能侵犯其合法权益的，请通过本政策公布的联系方式与我们联系，我们将在收到知识产权权利人合格通知后依法尽快处理。</p></section><section class="register-agreement-details-section"><h4>八、其他</h4> <p class="register-agreement-details-text">自然人电子税务局《用户注册协议》中所规定的用户权利及信息安全保障措施均适用于自然人电子税务局用户。如果自然人电子税务局《用户注册协议》与本政策存在不一致或矛盾之处，请以本政策为准。</p><p class="register-agreement-details-text">本政策的版权由自然人电子税务局所有，我们保留一切解释和修改权利。</p></section><section class="register-agreement-details-section"><h4>九、如何联系我们</h4> <p class="register-agreement-details-text">如果您对本政策或您个人信息处理的相关事宜有任何疑问、意见或建议，请通过以下地址与我们联系，我们邮寄联系方式如下：</p><p class="register-agreement-details-text">收件人：国家税务总局税收大数据和风险管理局</p><p class="register-agreement-details-text">地址：北京市西城区枣林前街68号</p><p class="register-agreement-details-text">邮编：100053</p></section></div></div></div></div></div> <div class="pop-authorize__ft clearfix"><button type="" name="" class="agree its-btn its-btn_medium its-btn_default"><!---->
+      不同意
+    </button> <button type="" name="agreement-btn" class="its-btn its-btn_medium its-btn_primary"><!---->
+      同意
+    </button></div> <span style="display: none;"><i class="icon iconfont icon-close weui-dialog__iicon-close"></i></span></div></div></div></div> <div class="window-dialog-update vux-multiple vux-dialog-big" style="display: none;"><div class="vux-x-dialog"><div class="weui-mask" style="display: none;"><div class="weui-dialog" style="display: none;"><div class="pop-upload-notification-title"><div class="pop-upload-notification-title-content"><span>发现新版本</span></div></div> <div class="pop-upload-notification-body" style="display: none;"></div> <div class="pop-upload-notification-footer"><button type="" name="" class="pop-upload-query-btn its-btn its-btn_primary"><!---->
+        立即更新
+      </button> <a href="javascript:;" class="manual-update">手动更新</a> <div class="pop-upload-query-progress" style="display: none;"><p class="pop-upload-query-progress-rate">0%</p> <div class="pop-upload-query-progress-bar"><span class="pop-upload-query-progress-bar-rate" style="width: 0%;"></span></div></div></div> <span style="display: none;"><i class="icon iconfont icon-close weui-dialog__iicon-close"></i></span></div></div></div></div> <div class="modules-update-modal vux-multiple"><div class="vux-x-dialog"><div class="weui-mask" style="display: none;"><div class="weui-dialog" style="display: none;"><div class="x-dialog__hd-img"></div> <div class="weui-dialog__hd"><strong class="weui-dialog__title">提示</strong></div> <div class="weui-dialog__bd">
+    当前版本过低，您需要更新后才能继续办理该业务
+  </div> <div class="weui-dialog__ft weui-dialog__ft__multiple"><a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary">立即更新</a> <a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_default">手动更新</a> <a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_default">取消</a></div> <span><i class="icon iconfont icon-close weui-dialog__iicon-close"></i></span></div></div></div></div> <!----> <!----> <div class="open-summary-container"><div class="modules-update-modal vux-multiple"><div class="vux-x-dialog"><div class="weui-mask" style="display: none;"><div class="weui-dialog" style="display: none;"><div class="x-dialog__hd-img"></div> <div class="weui-dialog__hd"><strong class="weui-dialog__title">给我们评分</strong></div> <div class="weui-dialog__bd">
+    请你给我个好评吧，我会继续努力做的更好！
+  </div> <div class="weui-dialog__ft weui-dialog__ft__multiple"><a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary">喜欢，给好评</a> <a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_default">我要意见反馈</a> <a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_default">暂时不评价</a></div> <span><i class="icon iconfont icon-close weui-dialog__iicon-close"></i></span></div></div></div></div></div> <div class="open-summary-container"><div class="modules-update-modal vux-multiple"><div class="vux-x-dialog"><div class="weui-mask" style="display: none;"><div class="weui-dialog" style="display: none;"><div class="x-dialog__hd-img"></div> <div class="weui-dialog__hd"><strong class="weui-dialog__title">给我们评分</strong></div> <div class="weui-dialog__bd">
+    请你给我个好评吧，我会继续努力做的更好！
+  </div> <div class="weui-dialog__ft weui-dialog__ft__multiple"><a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary">喜欢，给好评</a> <a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_default">我要意见反馈</a> <a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_default">暂时不评价</a></div> <span><i class="icon iconfont icon-close weui-dialog__iicon-close"></i></span></div></div></div></div></div> <div class="hsqjzty2021" style="display: none;"><div class="hsqjzty2021-content"><p class="hsqjzty2021-title">
+      2021综合所得年度汇算
+    </p> <p class="hsqjzty2021-text">将于3月1日正式开始，您可进入本专题页提前准备</p> <div class="hsqjzty2021-action-box"><a class="main-btn">去准备</a></div></div> <!----></div></div><script>var noCaptcha;</script><script type="text/javascript" charset="utf-8" src="https://g.alicdn.com/sd/ncpc/nc.js?t=2015052012"></script><script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.8&amp;key=0623c8c3e46245ff14ea0178299612a8"></script><script src="./sdk.js"></script><script src="./i18n.js"></script><script src="./bundle.js"></script><script src="./fzKeyboard-mobile.js"></script><script src="./cordova.js"></script><script src="./static/js/manifest.c47ccd04d8d2936e557b.js"></script><style type="text/css" class="nc-style">.nc-container #nc_1_wrapper,.nc-container.tb-login #nc_1_wrapper{width:300px}
+.nc-container .imgCaptcha,.nc-container .clickCaptcha{width:298px;}
+.nc-container.tb-login .imgCaptcha,.nc-container.tb-login .clickCaptcha{width:300px;}
+.nc-container.tb-login .imgCaptcha .captcha-error,.nc-container.tb-login .clickCaptcha .captcha-error{width:292px;}
+.nc-container.tb-login .errloading, .nc-container .errloading {width:290px;}</style><script src="./static/js/app.cac74e480d7cd805096d.js"></script><div class="v-transfer-dom"><div class="vux-alert"><div class="vux-x-dialog"><div class="weui-mask" style="display: none;"><div class="weui-dialog" style="display: none;"><div class="weui-dialog__hd"><strong class="weui-dialog__title"></strong></div> <div class="weui-dialog__bd"><div></div></div> <div class="weui-dialog__ft"><a href="javascript:;" name="global-alert-btn" class="weui-dialog__btn weui-dialog__btn_primary">确定</a></div></div></div></div></div></div><div class="v-transfer-dom"><div class="vux-confirm"><div class="vux-x-dialog"><div class="weui-mask" style="display: none;"><div class="weui-dialog" style="display: none;"><div class="weui-dialog__hd"><strong class="weui-dialog__title">提示</strong> <!----></div> <div class="weui-dialog__bd"><div>升级包安全校验错误，请手动更新至最新版本</div></div> <div class="weui-dialog__ft"><a href="javascript:;" name="" class="weui-dialog__btn weui-dialog__btn_default">
+            取消
+          </a> <a href="javascript:;" name="" class="weui-dialog__btn weui-dialog__btn_primary">
+            手动更新
+          </a></div></div></div></div></div></div><div class="global-confirm v-transfer-dom"><div class="vux-confirm"><div class="vux-x-dialog"><div class="weui-mask" style="display: none;"><div class="weui-dialog" style="display: none;"><!----> <div class="weui-dialog__bd"><div></div></div> <div class="weui-dialog__ft"><a href="javascript:;" name="" class="weui-dialog__btn weui-dialog__btn_default">
+            取消
+          </a> <a href="javascript:;" name="" class="weui-dialog__btn weui-dialog__btn_primary">
+            确定
+          </a></div></div></div></div></div></div><script></script></body></html>
