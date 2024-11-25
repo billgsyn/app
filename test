@@ -1,1 +1,33 @@
-test
+doc简写	Document	 Data Source	 Site
+ccr	Company Credit Report	民生银行	beehive-cmbc-ccr
+icr	Individual Credit Report	云闪付	beehive-jbzxbg
+		农业银行	beehive-abc-cr
+		建设银行	beehive-ccb-cr
+		交通银行	beehive-bcm-cr
+		招商银行	beehive-cmb-cr
+ibs	Individual Bank Statement	中国银行	beehive-boc
+		农业银行	beehive-abc
+		工商银行	beehive-icbc
+		建设银行	beehive-ccb
+		交通银行	beehive-bcm
+		邮储银行	beehive-psbc
+		招商银行	beehive-cmb
+iti	Individual Tax information	自然人电子税务局PC网页	chrome-tax-nsjl
+
+
+https://vditest.baihangcredit.com:8443/vdi/bhkycEntrance.html?appId=bh2ygogw&bizNo=xxxx&doc=ccr&doc=icr&doc=ibs&doc=iti&ts=1732155105&urlsign=xxxxxxxxxxxx 
+
+https://tu.com/back.html?appId=bh2ygogw&bizNo=xxxx&daId=xxxxxxx&doc=ibs&site=beehive-ccb&urlsign=xxxxxxxxxxxx
+
+
+然后关于生成验签的公私钥对
+
+建议在 Linux 环境下使用命令行生成
+// 生成 pkcs1 格式 4096 位 RSA 私钥 rsa_private_key.pem
+openssl genrsa -out rsa_private_key.pem 4096
+
+// pkcs1 格式私钥生成公钥 rsa_public_key.pem
+openssl rsa -in rsa_private_key.pem -pubout -out rsa_public_key.pem
+
+// pkcs1 格式私钥转成 pkcs8 格式私钥 rsa_private_key_pkcs8.pem
+openssl pkcs8 -topk8 -inform PEM -in rsa_private_key.pem -outform PEM -nocrypt -out rsa_private_key_pkcs8.pem
