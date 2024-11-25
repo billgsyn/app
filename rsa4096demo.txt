@@ -1,0 +1,110 @@
+package xxxxxx;
+
+import lombok.extern.slf4j.Slf4j;
+import org.bouncycastle.jce.provider.BouncyCastleProvider;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.security.*;
+import java.security.interfaces.RSAPublicKey;
+import java.security.spec.PKCS8EncodedKeySpec;
+import java.security.spec.X509EncodedKeySpec;
+import java.util.Base64;
+
+@Slf4j
+public class CryptoToolForTest {
+    static {
+        Security.addProvider(new BouncyCastleProvider());
+    }
+
+    /**
+     * 签名
+     * @param plainText  待签名字符串
+     * @param privateKey 私钥
+     * @return Base64编码的签名
+     * @throws Exception
+     */
+    public static String sign(String plainText, PrivateKey privateKey) throws Exception {
+        Signature sig = Signature.getInstance("SHA256withRSA");
+
+        sig.initSign(privateKey);
+        sig.update(plainText.getBytes());
+        byte[] signatureBytes = sig.sign();
+        return Base64.getEncoder().encodeToString(signatureBytes);
+    }
+
+    /**
+     * 验签
+     * @param plainText 待验签字符串
+     * @param signature Base64编码的签名
+     * @param publicKey 公钥
+     * @return 验签结果
+     * @throws Exception
+     */
+    public static boolean verify(String plainText, String signature, PublicKey publicKey) throws Exception {
+        Signature sig = Signature.getInstance("SHA256withRSA");
+
+        sig.initVerify(publicKey);
+        sig.update(plainText.getBytes());
+        return sig.verify(Base64.getDecoder().decode(signature));
+    }
+
+    public static String getStringFromKey(String filename) throws IOException {
+        // Read key from file
+        String strKeyPEM = "";
+        try (BufferedReader br = new BufferedReader(new FileReader(filename))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                strKeyPEM += line + "\n";
+            }
+        }
+        return strKeyPEM;
+    }
+
+    public static RSAPublicKey getPublicKeyFromString(String key) throws IOException, GeneralSecurityException {
+        String publicKeyPEM = key;
+        publicKeyPEM = publicKeyPEM.replace("-----BEGIN PUBLIC KEY-----\n", "");
+        publicKeyPEM = publicKeyPEM.replace("-----END PUBLIC KEY-----", "");
+
+        byte[] encoded = Base64.getDecoder().decode(publicKeyPEM.replace("\n", ""));
+        KeyFactory kf = KeyFactory.getInstance("RSA");
+        RSAPublicKey pubKey = (RSAPublicKey) kf.generatePublic(new X509EncodedKeySpec(encoded));
+        return pubKey;
+    }
+    public static PrivateKey string2PrivateKey(String privateKeyString)  throws Exception {
+        privateKeyString = privateKeyString.replace("-----BEGIN PRIVATE KEY-----\n", "");
+        privateKeyString = privateKeyString.replace("-----END PRIVATE KEY-----\n", "").replace("\n", "");
+        System.out.println(privateKeyString);
+        String base64PrivateKey = privateKeyString;
+        byte[] keyBytes = Base64.getDecoder().decode(base64PrivateKey);
+        PKCS8EncodedKeySpec keySpec = new PKCS8EncodedKeySpec(keyBytes);
+        KeyFactory keyFactory = KeyFactory.getInstance("RSA");
+        PrivateKey privateKey = keyFactory.generatePrivate(keySpec);
+        return privateKey;
+    }
+
+    /**
+     * 生成4096 RSA公私钥文件的方法
+     * // 1. 生成 pkcs1 格式 2048 位 RSA 私钥 rsa_private_key.pem
+     * openssl genrsa -out rsa_private_key.pem 4096
+     *
+     * // 2. pkcs1 格式私钥生成公钥 rsa_public_key.pem
+     * openssl rsa -in rsa_private_key.pem -pubout -out rsa_public_key.pem
+     *
+     * // 3. pkcs1 格式私钥转成 pkcs8 格式私钥 rsa_private_key_pkcs8.pem
+     * openssl pkcs8 -topk8 -inform PEM -in rsa_private_key.pem -outform PEM -nocrypt -out rsa_private_key_pkcs8.pem
+     * @param args
+     * @throws Exception
+     */
+    public static void main(String[] args) throws Exception {
+
+        PrivateKey priKey = string2PrivateKey(getStringFromKey("d:\\data\\rsa_private_key_pkcs8.pem"));
+        PublicKey pubKey = getPublicKeyFromString(getStringFromKey("d:\\data\\rsa_public_key.pem"));
+
+        String planTxt = "efffdsa87fsfsdfdsafafdsafdsafdsfs";
+        String sign = sign(planTxt, priKey);
+        System.out.println("sign=" + sign);
+        System.out.println("verifyResult=" + verify(planTxt, sign, pubKey));
+    }
+}
