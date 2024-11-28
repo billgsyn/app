@@ -1,23 +1,24 @@
-doc简写	Document	 Data Source	 Site
-ccr	Company Credit Report	民生银行	beehive-cmbc-ccr
-icr	Individual Credit Report	云闪付	beehive-jbzxbg
-		农业银行	beehive-abc-cr
-		建设银行	beehive-ccb-cr
-		交通银行	beehive-bcm-cr
-		招商银行	beehive-cmb-cr
-ibs	Individual Bank Statement	中国银行	beehive-boc
-		农业银行	beehive-abc
-		工商银行	beehive-icbc
-		建设银行	beehive-ccb
-		交通银行	beehive-bcm
-		邮储银行	beehive-psbc
-		招商银行	beehive-cmb
-iti	Individual Tax information	自然人电子税务局PC网页	chrome-tax-nsjl
+doc简写	Document	 Data Source	 Site	PDF是否有密码
+ccr	Company Credit Report	民生银行	beehive-cmbc-ccr	否
+icr	Individual Credit Report	云闪付	beehive-jbzxbg	否
+		农业银行	beehive-abc-cr	否
+		建设银行	beehive-ccb-cr	否
+		交通银行	beehive-bcm-cr	否
+		招商银行	beehive-cmb-cr	是
+ibs	Individual Bank Statement	中国银行	beehive-boc	是
+		农业银行	beehive-abc	否
+		工商银行	beehive-icbc	是
+		建设银行	beehive-ccb	否
+		交通银行	beehive-bcm	否
+		邮储银行	beehive-psbc	否
+		招商银行	beehive-cmb	否
+iti	Individual Tax information	自然人电子税务局PC网页	chrome-tax-nsjl	是
 
 
-https://vditest.baihangcredit.com:8443/vdi/bhkycEntrance.html?appId=bh2ygogw&bizNo=xxxx&doc=ccr&doc=icr&doc=ibs&doc=iti&ts=1732155105&urlsign=xxxxxxxxxxxx 
-
-https://tu.com/back.html?appId=bh2ygogw&bizNo=xxxx&daId=xxxxxxx&doc=ibs&site=beehive-ccb&urlsign=xxxxxxxxxxxx
+拼接规则顺序	https://vditest.baihangcredit.com:8443/vdi/bhkycEntrance.html?appId=bh2ygogw&bizNo=xxxx&doc=ccr&doc=icr&doc=ibs&doc=iti&ts=1732155105&urlSign=xxxxxxxxxxxx 									
+										
+										
+返回链接	https://tu.com/back.html?appId=bh2ygogw&bizNo=xxxx&daId=xxxxxxx&doc=ibs&site=beehive-ccb&urlSign=xxxxxxxxxxxx
 
 
 然后关于生成验签的公私钥对
