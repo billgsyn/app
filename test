@@ -1,22 +1,22 @@
-doc简写	Document	 Data Source	 Site	PDF是否有密码
-ccr	Company Credit Report	民生银行	beehive-cmbc-ccr	否
-icr	Individual Credit Report	云闪付	beehive-jbzxbg	否
-		农业银行	beehive-abc-cr	否
-		建设银行	beehive-ccb-cr	否
-		交通银行	beehive-bcm-cr	否
-		招商银行	beehive-cmb-cr	是
-ibs	Individual Bank Statement	中国银行	beehive-boc	是
-		农业银行	beehive-abc	否
-		工商银行	beehive-icbc	是
-		建设银行	beehive-ccb	否
-		交通银行	beehive-bcm	否
-		邮储银行	beehive-psbc	否
-		招商银行	beehive-cmb	否
-iti	Individual Tax information	自然人电子税务局PC网页	chrome-tax-nsjl	是
+doc简写	Document	 Data Source	 Site	PDF是否有密码	zip包名称	PDF文件名称
+ccr	Company Credit Report	民生银行	beehive-cmbc-ccr	否	 BusinessCreditReport_时间_hash	 BusinessCreditReport_daid_hash
+icr	Individual Credit Report	云闪付	beehive-jbzxbg	否	CreditReport_时间_hash
+举例：CreditReport_20240827172349_574fcb515da4cd2d8f421402b72eb85f860af6905569e227e66247f8e685ef01.zip	CreditReport_daid_hash
+		农业银行	beehive-abc-cr	否		CreditReport_daid_hash
+		建设银行	beehive-ccb-cr	否		CreditReport_daid_hash
+		交通银行	beehive-bcm-cr	否		CreditReport_daid_hash
+		招商银行	beehive-cmb-cr	是		密码_CreditReport_daid_hash
+ibs	Individual Bank Statement	中国银行	beehive-boc	是	boc_时间_hash	boc_daid_hash
+		农业银行	beehive-abc	否	abc_时间_hash	abc_daid_hash
+		工商银行	beehive-icbc	是	icbc_时间_hash	密码_icbc_daid_hash
+		建设银行	beehive-ccb	否	ccb_时间_hash	ccb_daid_hash
+		交通银行	beehive-bcm	否	bcm_时间_hash	bcm_daid_hash
+		邮储银行	beehive-psbc	否	psbc_时间_hash	psbc_daid_hash
+		招商银行	beehive-cmb	否	cmb_时间_hash	cmb_daid_hash
+iti	Individual Tax information	自然人电子税务局PC网页	chrome-tax-nsjl	是	tax_时间_hash	密码_tax_daid_hash
 
 
-拼接规则顺序	https://vditest.baihangcredit.com:8443/vdi/bhkycEntrance.html?appId=bh2ygogw&bizNo=xxxx&doc=ccr&doc=icr&doc=ibs&doc=iti&ts=1732155105&urlSign=xxxxxxxxxxxx 									
-										
+拼接规则顺序	https://vditest.baihangcredit.com:8443/vdi/bhkycEntrance.html?appId=bh2ygogw&bizNo=xxxx&doc=ccr&doc=icr&doc=ibs&doc=iti&ts=1732155105&urlSign=xxxxxxxxxxxx										
 										
 返回链接	https://tu.com/back.html?appId=bh2ygogw&bizNo=xxxx&daId=xxxxxxx&doc=ibs&site=beehive-ccb&urlSign=xxxxxxxxxxxx
 
